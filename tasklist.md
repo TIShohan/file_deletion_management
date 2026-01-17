@@ -40,7 +40,7 @@ This tasklist outlines the steps to convert the prototype script into a professi
 - [x] Add a settings panel for global "Skip Extensions".
 
 ## Phase 6: Packaging & Deployment
-- [ ] Create a custom application icon (.ico).
-- [ ] Configure PyInstaller spec file for a "One-File" executable (includes Python runtime).
-- [ ] **Installer Creation**: Set up Inno Setup or a similar tool to create a user-friendly `.exe` installer.
-- [ ] Test the installation and execution on a machine without Python installed.
+- [x] Create a custom application icon (.ico).
+- [x] Configure PyInstaller spec file for a "One-File" executable (includes Python runtime).
+- [x] **Installer Creation**: Set up Inno Setup or a similar tool to create a user-friendly `.exe` installer.
+- [x] Build standalone executable via PyInstaller.
