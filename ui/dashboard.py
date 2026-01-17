@@ -1,9 +1,13 @@
+import flet as ft
+from flet import Colors as colors
+Icons = ft.icons.Icons
 from ui.style import PremiumCard, PRIMARY, TEXT_SUB, CONTENT_PADDING, BORDER_RADIUS
+import os
 
 class DashboardView(ft.Container):
     def __init__(self, page: ft.Page, state: dict):
         super().__init__()
-        self.page = page
+        self._page = page
         self.state = state
         self.expand = True
         self.content = self.build_ui()
@@ -14,33 +18,38 @@ class DashboardView(ft.Container):
         return self.build_dashboard_content()
 
     def build_welcome_screen(self):
-        def pick_folder_result(e: ft.FilePickerResultEvent):
+        def pick_folder_result(e):
             if e.path:
                 self.state["selected_path"] = e.path
                 self.content = self.build_ui()
                 self.update()
 
-        pick_folder_dialog = ft.FilePicker(on_result=pick_folder_result)
-        self.page.overlay.append(pick_folder_dialog)
+        self.pick_folder_dialog = ft.FilePicker()
+        self.pick_folder_dialog.on_result = pick_folder_result
+        
+        # Add to overlay if not already there
+        if self.pick_folder_dialog not in self._page.overlay:
+            self._page.overlay.append(self.pick_folder_dialog)
+            self._page.update()
 
         return ft.Container(
             content=ft.Column(
                 [
                     ft.Container(
-                        content=ft.Icon(ft.icons.FOLDER_OPEN_ROUNDED, size=80, color=PRIMARY),
+                        content=ft.Icon(Icons.FOLDER_OPEN, size=80, color=PRIMARY),
                         padding=30,
-                        bgcolor=ft.colors.with_opacity(0.1, PRIMARY),
+                        bgcolor=colors.with_opacity(0.1, PRIMARY),
                         border_radius=50,
                     ),
                     ft.Text("Storage Analyzer", size=40, weight=ft.FontWeight.BOLD),
                     ft.Text("Connect a local drive or select a folder to start the cleaning process.", color=TEXT_SUB, text_align=ft.TextAlign.CENTER),
-                    ft.Divider(height=20, color=ft.colors.TRANSPARENT),
+                    ft.Divider(height=20, color=colors.TRANSPARENT),
                     ft.ElevatedButton(
                         "Scan New Directory",
-                        icon=ft.icons.ADD_ROUNDED,
-                        on_click=lambda _: pick_folder_dialog.get_directory_path(),
+                        icon=Icons.ADD,
+                        on_click=lambda _: self.pick_folder_dialog.get_directory_path(),
                         style=ft.ButtonStyle(
-                            color=ft.colors.WHITE,
+                            color=colors.WHITE,
                             bgcolor=PRIMARY,
                             padding=25,
                             shape=ft.RoundedRectangleBorder(radius=BORDER_RADIUS),
@@ -52,7 +61,7 @@ class DashboardView(ft.Container):
                 spacing=10,
             ),
             expand=True,
-            alignment=ft.alignment.center,
+            alignment=ft.alignment.Alignment.CENTER,
         )
 
     def build_dashboard_content(self):
@@ -68,19 +77,19 @@ class DashboardView(ft.Container):
                                 ft.Text("System Overview", size=28, weight=ft.FontWeight.BOLD),
                                 ft.Text(f"Target: {self.state['selected_path']}", color=TEXT_SUB),
                             ]),
-                            ft.IconButton(ft.icons.REFRESH_ROUNDED, on_click=lambda _: self.update_dashboard())
+                            ft.IconButton(Icons.REFRESH, on_click=lambda _: self.update_dashboard())
                         ],
                         alignment=ft.MainAxisAlignment.SPACE_BETWEEN
                     ),
                     ft.Row(
                         [
-                            self.summary_card("Total Files", stats['count'], ft.icons.INSERT_DRIVE_FILE, ft.colors.BLUE_400),
-                            self.summary_card("Duplicates Found", stats['dupes'], ft.icons.COPY_ALL, ft.colors.ORANGE_400),
-                            self.summary_card("Potential Recovery", f"{stats['size']} GB", ft.icons.STORAGE, ft.colors.GREEN_400),
+                            self.summary_card("Total Files", stats['count'], Icons.INSERT_DRIVE_FILE, colors.BLUE_400),
+                            self.summary_card("Duplicates Found", stats['dupes'], Icons.COPY_ALL, colors.ORANGE_400),
+                            self.summary_card("Potential Recovery", f"{stats['size']} GB", Icons.STORAGE, colors.GREEN_400),
                         ],
                         spacing=20,
                     ),
-                    ft.Divider(height=20, color=ft.colors.with_opacity(0.1, ft.colors.WHITE)),
+                    ft.Divider(height=20, color=colors.with_opacity(0.1, colors.WHITE)),
                     ft.Text("Storage Distribution", size=20, weight=ft.FontWeight.BOLD),
                     self.build_folder_summary(),
                 ],
@@ -124,7 +133,7 @@ class DashboardView(ft.Container):
             size_gb = round(folder['total'] / 1024, 2)
             controls.append(
                 ft.ListTile(
-                    leading=ft.Icon(ft.icons.FOLDER),
+                    leading=ft.Icon(Icons.FOLDER),
                     title=ft.Text(os.path.basename(folder['folder']) if folder['folder'] else "Root"),
                     subtitle=ft.Text(folder['folder'], size=11, color=TEXT_SUB),
                     trailing=ft.Text(f"{size_gb} GB", weight=ft.FontWeight.BOLD, color=PRIMARY),

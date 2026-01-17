@@ -199,6 +199,14 @@
    'E:\\My Built '
    'Softwares\\file_deletion_management\\ui\\__pycache__\\scanner_view.cpython-312.pyc',
    'DATA'),
+  ('ui\\__pycache__\\settings.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\settings.cpython-312.pyc',
+   'DATA'),
+  ('ui\\__pycache__\\style.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\style.cpython-312.pyc',
+   'DATA'),
   ('ui\\dashboard.py',
    'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
    'DATA'),
@@ -226,7 +234,7 @@
  [],
  False,
  False,
- 1768675871,
+ 1768678063,
  [('runw.exe',
    'E:\\My Built '
    'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',

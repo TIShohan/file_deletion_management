@@ -1,4 +1,5 @@
 import flet as ft
+from flet import Colors as colors
 
 # Color Palette
 PRIMARY = "#0078D4"  # Electric Blue
@@ -14,21 +15,8 @@ CONTENT_PADDING = 30
 TRANSITION_SPEED = 400
 
 def apply_theme(page: ft.Page):
-    page.theme = ft.Theme(
-        color_scheme=ft.ColorScheme(
-            primary=PRIMARY,
-            surface=SURFACE,
-            background=BACKGROUND,
-            on_primary=TEXT_MAIN,
-            on_surface=TEXT_MAIN,
-            outline=ACCENT,
-        ),
-        visual_density=ft.VisualDensity.COMFORTABLE,
-        page_transitions=ft.PageTransitionsTheme(
-            windows=ft.PageTransitionByRouteArrived.FADE_UPWARDS,
-            macos=ft.PageTransitionByRouteArrived.ZOOM,
-        )
-    )
+    # Setup theme for Flet 0.80.2
+    page.theme_mode = ft.ThemeMode.DARK
     page.bgcolor = BACKGROUND
     page.window_width = 1200
     page.window_height = 850
@@ -43,7 +31,7 @@ class PremiumCard(ft.Container):
         self.on_click = on_click
         self.bgcolor = SURFACE
         self.border_radius = BORDER_RADIUS
-        self.border = ft.border.all(1, ft.colors.with_opacity(0.1, ft.colors.WHITE))
+        self.border = ft.border.all(1, colors.with_opacity(0.1, colors.WHITE))
         self.animate = ft.Animation(300, ft.AnimationCurve.DECELERATE)
         self.animate_scale = ft.Animation(300, ft.AnimationCurve.DECELERATE)
 

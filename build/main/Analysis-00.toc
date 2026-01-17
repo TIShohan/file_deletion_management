@@ -46,6 +46,14 @@
    'E:\\My Built '
    'Softwares\\file_deletion_management\\ui\\__pycache__\\scanner_view.cpython-312.pyc',
    'DATA'),
+  ('ui\\__pycache__\\settings.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\settings.cpython-312.pyc',
+   'DATA'),
+  ('ui\\__pycache__\\style.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\style.cpython-312.pyc',
+   'DATA'),
   ('ui\\dashboard.py',
    'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
    'DATA'),
@@ -690,13 +698,13 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\stringprep.py',
    'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_py_abc.py',
-   'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_py_abc.py',
    'PYMODULE'),
   ('backend.database',
    'E:\\My Built Softwares\\file_deletion_management\\backend\\database.py',
@@ -734,6 +742,101 @@
    'E:\\My Built Softwares\\file_deletion_management\\ui\\settings.py',
    'PYMODULE'),
   ('ui', '-', 'PYMODULE'),
+  ('ui.scanner_view',
+   'E:\\My Built Softwares\\file_deletion_management\\ui\\scanner_view.py',
+   'PYMODULE'),
+  ('send2trash',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\__init__.py',
+   'PYMODULE'),
+  ('send2trash.plat_other',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_other.py',
+   'PYMODULE'),
+  ('send2trash.util',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\util.py',
+   'PYMODULE'),
+  ('send2trash.plat_gio',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_gio.py',
+   'PYMODULE'),
+  ('send2trash.win',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\__init__.py',
+   'PYMODULE'),
+  ('send2trash.win.legacy',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\legacy.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('send2trash.win.modern',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\modern.py',
+   'PYMODULE'),
+  ('send2trash.win.IFileOperationProgressSink',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\IFileOperationProgressSink.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\platform.py',
+   'PYMODULE'),
+  ('send2trash.mac',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\__init__.py',
+   'PYMODULE'),
+  ('send2trash.mac.legacy',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\legacy.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('send2trash.mac.modern',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\modern.py',
+   'PYMODULE'),
+  ('send2trash.exceptions',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\exceptions.py',
+   'PYMODULE'),
+  ('backend.worker',
+   'E:\\My Built Softwares\\file_deletion_management\\backend\\worker.py',
+   'PYMODULE'),
+  ('backend.scanner',
+   'E:\\My Built Softwares\\file_deletion_management\\backend\\scanner.py',
+   'PYMODULE'),
+  ('ui.dashboard',
+   'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
+   'PYMODULE'),
+  ('ui.style',
+   'E:\\My Built Softwares\\file_deletion_management\\ui\\style.py',
+   'PYMODULE'),
   ('flet',
    'E:\\My Built '
    'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\__init__.py',
@@ -761,10 +864,6 @@
   ('flet.utils.platform_utils',
    'E:\\My Built '
    'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\platform_utils.py',
-   'PYMODULE'),
-  ('platform',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\platform.py',
    'PYMODULE'),
   ('asyncio',
    'C:\\Users\\MY '
@@ -2550,97 +2649,6 @@
   ('flet.utils.pip',
    'E:\\My Built '
    'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\pip.py',
-   'PYMODULE'),
-  ('ui.scanner_view',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\scanner_view.py',
-   'PYMODULE'),
-  ('send2trash',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\__init__.py',
-   'PYMODULE'),
-  ('send2trash.plat_other',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_other.py',
-   'PYMODULE'),
-  ('send2trash.util',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\util.py',
-   'PYMODULE'),
-  ('send2trash.plat_gio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_gio.py',
-   'PYMODULE'),
-  ('send2trash.win',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\__init__.py',
-   'PYMODULE'),
-  ('send2trash.win.legacy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\legacy.py',
-   'PYMODULE'),
-  ('ctypes.wintypes',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\wintypes.py',
-   'PYMODULE'),
-  ('send2trash.win.modern',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\modern.py',
-   'PYMODULE'),
-  ('send2trash.win.IFileOperationProgressSink',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\IFileOperationProgressSink.py',
-   'PYMODULE'),
-  ('send2trash.mac',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\__init__.py',
-   'PYMODULE'),
-  ('send2trash.mac.legacy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\legacy.py',
-   'PYMODULE'),
-  ('ctypes.util',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\util.py',
-   'PYMODULE'),
-  ('ctypes._aix',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\_aix.py',
-   'PYMODULE'),
-  ('ctypes.macholib.dyld',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\dyld.py',
-   'PYMODULE'),
-  ('ctypes.macholib',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\__init__.py',
-   'PYMODULE'),
-  ('ctypes.macholib.dylib',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\dylib.py',
-   'PYMODULE'),
-  ('ctypes.macholib.framework',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\macholib\\framework.py',
-   'PYMODULE'),
-  ('send2trash.mac.modern',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\modern.py',
-   'PYMODULE'),
-  ('send2trash.exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\exceptions.py',
-   'PYMODULE'),
-  ('backend.worker',
-   'E:\\My Built Softwares\\file_deletion_management\\backend\\worker.py',
-   'PYMODULE'),
-  ('backend.scanner',
-   'E:\\My Built Softwares\\file_deletion_management\\backend\\scanner.py',
-   'PYMODULE'),
-  ('ui.dashboard',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
-   'PYMODULE'),
-  ('ui.style',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\style.py',
    'PYMODULE')],
  [('python312.dll',
    'C:\\Users\\MY '
@@ -2769,6 +2777,14 @@
    'E:\\My Built '
    'Softwares\\file_deletion_management\\ui\\__pycache__\\scanner_view.cpython-312.pyc',
    'DATA'),
+  ('ui\\__pycache__\\settings.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\settings.cpython-312.pyc',
+   'DATA'),
+  ('ui\\__pycache__\\style.cpython-312.pyc',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\__pycache__\\style.cpython-312.pyc',
+   'DATA'),
   ('ui\\dashboard.py',
    'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
    'DATA'),
@@ -2793,40 +2809,103 @@
    'E:\\My Built '
    'Softwares\\file_deletion_management\\build\\main\\base_library.zip',
    'DATA')],
- [('traceback',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\traceback.py',
-   'PYMODULE'),
-  ('io',
+ [('io',
    'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\io.py',
    'PYMODULE'),
-  ('_weakrefset',
+  ('functools',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_weakrefset.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\functools.py',
    'PYMODULE'),
-  ('sre_parse',
+  ('types',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_parse.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\types.py',
+   'PYMODULE'),
+  ('sre_constants',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_constants.py',
    'PYMODULE'),
   ('ntpath',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ntpath.py',
    'PYMODULE'),
-  ('copyreg',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\copyreg.py',
-   'PYMODULE'),
   ('operator',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\operator.py',
    'PYMODULE'),
-  ('heapq',
+  ('os',
+   'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\os.py',
+   'PYMODULE'),
+  ('_collections_abc',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\heapq.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_collections_abc.py',
+   'PYMODULE'),
+  ('keyword',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\keyword.py',
+   'PYMODULE'),
+  ('genericpath',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\genericpath.py',
+   'PYMODULE'),
+  ('_weakrefset',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_weakrefset.py',
+   'PYMODULE'),
+  ('traceback',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\traceback.py',
+   'PYMODULE'),
+  ('re._parser',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_parser.py',
+   'PYMODULE'),
+  ('re._constants',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_constants.py',
+   'PYMODULE'),
+  ('re._compiler',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_compiler.py',
+   'PYMODULE'),
+  ('re._casefix',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_casefix.py',
+   'PYMODULE'),
+  ('re',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\__init__.py',
    'PYMODULE'),
   ('enum',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\enum.py',
+   'PYMODULE'),
+  ('codecs',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\codecs.py',
+   'PYMODULE'),
+  ('sre_parse',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_parse.py',
+   'PYMODULE'),
+  ('copyreg',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\copyreg.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\posixpath.py',
+   'PYMODULE'),
+  ('sre_compile',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_compile.py',
+   'PYMODULE'),
+  ('locale',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\locale.py',
+   'PYMODULE'),
+  ('reprlib',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\reprlib.py',
    'PYMODULE'),
   ('encodings.zlib_codec',
    'C:\\Users\\MY '
@@ -3316,47 +3395,13 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\encodings\\__init__.py',
    'PYMODULE'),
-  ('keyword',
+  ('stat',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\keyword.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\stat.py',
    'PYMODULE'),
-  ('abc',
-   'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\abc.py',
-   'PYMODULE'),
-  ('functools',
+  ('linecache',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\functools.py',
-   'PYMODULE'),
-  ('warnings',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\warnings.py',
-   'PYMODULE'),
-  ('re._parser',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_parser.py',
-   'PYMODULE'),
-  ('re._constants',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_constants.py',
-   'PYMODULE'),
-  ('re._compiler',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_compiler.py',
-   'PYMODULE'),
-  ('re._casefix',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\_casefix.py',
-   'PYMODULE'),
-  ('re',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\re\\__init__.py',
-   'PYMODULE'),
-  ('os',
-   'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\os.py',
-   'PYMODULE'),
-  ('locale',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\locale.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\linecache.py',
    'PYMODULE'),
   ('collections.abc',
    'C:\\Users\\MY '
@@ -3370,43 +3415,14 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\weakref.py',
    'PYMODULE'),
-  ('posixpath',
+  ('warnings',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\posixpath.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\warnings.py',
    'PYMODULE'),
-  ('_collections_abc',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_collections_abc.py',
+  ('abc',
+   'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\abc.py',
    'PYMODULE'),
-  ('codecs',
+  ('heapq',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\codecs.py',
-   'PYMODULE'),
-  ('genericpath',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\genericpath.py',
-   'PYMODULE'),
-  ('sre_compile',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_compile.py',
-   'PYMODULE'),
-  ('linecache',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\linecache.py',
-   'PYMODULE'),
-  ('types',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\types.py',
-   'PYMODULE'),
-  ('stat',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\stat.py',
-   'PYMODULE'),
-  ('reprlib',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\reprlib.py',
-   'PYMODULE'),
-  ('sre_constants',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\sre_constants.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\heapq.py',
    'PYMODULE')])

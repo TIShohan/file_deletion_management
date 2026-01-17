@@ -1,10 +1,12 @@
 import flet as ft
+from flet import Colors as colors
+Icons = ft.icons.Icons
 from ui.style import PremiumCard, CONTENT_PADDING, TEXT_SUB, BORDER_RADIUS, PRIMARY
 
 class SettingsView(ft.Container):
     def __init__(self, page: ft.Page, state: dict):
         super().__init__()
-        self.page = page
+        self._page = page
         self.state = state
         self.expand = True
         
@@ -29,7 +31,7 @@ class SettingsView(ft.Container):
                 [
                     ft.Text("Settings", size=28, weight=ft.FontWeight.BOLD),
                     ft.Text("Configure application behavior and defaults.", color=TEXT_SUB),
-                    ft.Divider(height=20, color=ft.colors.with_opacity(0.1, ft.colors.WHITE)),
+                    ft.Divider(height=20, color=colors.with_opacity(0.1, colors.WHITE)),
                     
                     ft.Text("Scan Filters", size=18, weight=ft.FontWeight.BOLD),
                     PremiumCard(
@@ -54,9 +56,9 @@ class SettingsView(ft.Container):
                     ft.Row([
                         ft.ElevatedButton(
                             "Save & Apply Settings",
-                            icon=ft.icons.SAVE_ROUNDED,
-                            style=ft.ButtonStyle(bgcolor=PRIMARY, color=ft.colors.WHITE, shape=ft.RoundedRectangleBorder(radius=10)),
-                            on_click=lambda _: self.page.open(ft.SnackBar(ft.Text("Settings saved!")))
+                            icon=Icons.SAVE,
+                            style=ft.ButtonStyle(bgcolor=PRIMARY, color=colors.WHITE, shape=ft.RoundedRectangleBorder(radius=10)),
+                            on_click=lambda _: self.save_and_show_snack()
                         )
                     ], alignment=ft.MainAxisAlignment.END)
                 ],
@@ -66,6 +68,13 @@ class SettingsView(ft.Container):
             padding=CONTENT_PADDING,
             expand=True
         )
+
+    def save_and_show_snack(self):
+        self.state["skip_extensions"] = self.extensions_input.value
+        snack = ft.SnackBar(ft.Text("Settings saved!"))
+        self._page.snack_bar = snack
+        snack.open = True
+        self._page.update()
 
     def save_settings(self, e):
         self.state["skip_extensions"] = self.extensions_input.value

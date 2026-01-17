@@ -1,11 +1,13 @@
 import flet as ft
+from flet import Colors as colors
+Icons = ft.icons.Icons
 from ui.style import PremiumCard, PRIMARY, TEXT_SUB, CONTENT_PADDING, BORDER_RADIUS, SURFACE
 from backend.worker import ScanWorker
 
 class ScannerView(ft.Container):
     def __init__(self, page: ft.Page, state: dict):
         super().__init__()
-        self.page = page
+        self._page = page
         self.state = state
         self.expand = True
         self.worker = None
@@ -17,16 +19,16 @@ class ScannerView(ft.Container):
         self.progress_text = ft.Text("Ready", color=TEXT_SUB, size=12)
         self.scan_button = ft.ElevatedButton(
             "Start Depth Scan", 
-            icon=ft.icons.PLAY_ARROW_ROUNDED, 
+            icon=Icons.PLAY_ARROW, 
             on_click=self.start_scan,
-            style=ft.ButtonStyle(bgcolor=PRIMARY, color=ft.colors.WHITE, shape=ft.RoundedRectangleBorder(radius=10)),
+            style=ft.ButtonStyle(bgcolor=PRIMARY, color=colors.WHITE, shape=ft.RoundedRectangleBorder(radius=10)),
             disabled=not self.state["selected_path"]
         )
 
         # Filters
         self.search_box = ft.TextField(
             hint_text="Search files...",
-            prefix_icon=ft.icons.SEARCH,
+            prefix_icon=Icons.SEARCH,
             bgcolor=SURFACE,
             border_radius=10,
             on_change=lambda _: self.load_results(),
@@ -41,15 +43,15 @@ class ScannerView(ft.Container):
         # Action Buttons
         self.dry_run_btn = ft.OutlinedButton(
             "Dry Run", 
-            icon=ft.icons.PREVIEW, 
+            icon=Icons.PREVIEW, 
             on_click=self.show_dry_run,
             visible=False
         )
         self.delete_btn = ft.ElevatedButton(
             "Delete Selected", 
-            icon=ft.icons.DELETE_FOREVER, 
-            bgcolor=ft.colors.RED_700, 
-            color=ft.colors.WHITE,
+            icon=Icons.DELETE, 
+            bgcolor=colors.RED_700, 
+            color=colors.WHITE,
             on_click=self.confirm_delete,
             visible=False
         )
@@ -69,7 +71,7 @@ class ScannerView(ft.Container):
                     ft.Container(
                         content=self.results_list,
                         expand=True,
-                        bgcolor=ft.colors.with_opacity(0.05, ft.colors.WHITE),
+                        bgcolor=colors.with_opacity(0.05, colors.WHITE),
                         border_radius=BORDER_RADIUS,
                     ),
                     ft.Row(
@@ -150,24 +152,29 @@ class ScannerView(ft.Container):
         dlg = ft.AlertDialog(
             title=ft.Text("Dry Run Preview"),
             content=ft.Container(content=preview_items, height=300),
-            actions=[ft.TextButton("Close", on_click=lambda e: self.page.close(dlg))],
+            actions=[ft.TextButton("Close", on_click=lambda e: setattr(dlg, "open", False) or self._page.update())],
         )
-        self.page.open(dlg)
+        self._page.dialog = dlg
+        dlg.open = True
+        self._page.update()
 
     def confirm_delete(self, _):
         def do_delete(e):
-            self.page.close(dlg)
+            dlg.open = False
+            self._page.update()
             self.perform_deletion()
 
         dlg = ft.AlertDialog(
             title=ft.Text("Danger Zone!"),
             content=ft.Text(f"Are you sure you want to move {len(self.selected_files)} files to the Recycle Bin?"),
             actions=[
-                ft.TextButton("Cancel", on_click=lambda e: self.page.close(dlg)),
-                ft.ElevatedButton("Yes, Delete Them", bgcolor=ft.colors.RED_700, color=ft.colors.WHITE, on_click=do_delete),
+                ft.TextButton("Cancel", on_click=lambda e: setattr(dlg, "open", False) or self._page.update()),
+                ft.ElevatedButton("Yes, Delete Them", bgcolor=colors.RED_700, color=colors.WHITE, on_click=do_delete),
             ],
         )
-        self.page.open(dlg)
+        self._page.dialog = dlg
+        dlg.open = True
+        self._page.update()
 
     def perform_deletion(self):
         import send2trash
@@ -189,7 +196,9 @@ class ScannerView(ft.Container):
         self.update_actions()
         
         snack = ft.SnackBar(ft.Text(f"Deleted {success} files. Errors: {errors}"))
-        self.page.open(snack)
+        self._page.snack_bar = snack
+        snack.open = True
+        self._page.update()
 
     def load_results(self):
         search = self.search_box.value.lower()
@@ -213,8 +222,8 @@ class ScannerView(ft.Container):
             self.results_list.controls.append(
                 ft.ListTile(
                     leading=ft.Icon(
-                        ft.icons.INSERT_DRIVE_FILE if not is_dupe else ft.icons.COPY_ALL, 
-                        color=ft.colors.BLUE_200 if not is_dupe else ft.colors.ORANGE_400
+                        Icons.INSERT_DRIVE_FILE if not is_dupe else Icons.COPY_ALL, 
+                        color=colors.BLUE_200 if not is_dupe else colors.ORANGE_400
                     ),
                     title=ft.Text(f['filename'], weight=ft.FontWeight.BOLD if is_dupe else None),
                     subtitle=ft.Text(f"{f['size_mb']} MB • {f['folder']}", size=11, color=TEXT_SUB),
@@ -222,7 +231,7 @@ class ScannerView(ft.Container):
                         value=path in self.selected_files,
                         on_change=lambda e, p=path: self.on_file_select(e, p)
                     ),
-                    bgcolor=ft.colors.with_opacity(0.1, ft.colors.ORANGE_900) if is_dupe else None,
+                    bgcolor=colors.with_opacity(0.1, colors.ORANGE_900) if is_dupe else None,
                 )
             )
         self.update()
