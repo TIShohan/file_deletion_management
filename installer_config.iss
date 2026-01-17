@@ -1,22 +1,22 @@
 [Setup]
-AppName=Antigravity File Manager
-AppVersion=1.0
-DefaultDirName={autopf}\AntigravityFileManager
-DefaultGroupName=Antigravity File Manager
-UninstallDisplayIcon={app}\main.exe
+AppName=CleanSweep
+AppVersion=2.0
+DefaultDirName={autopf}\CleanSweep
+DefaultGroupName=CleanSweep
+UninstallDisplayIcon={app}\CleanSweep.exe
 OutputDir=.
-OutputBaseFilename=AntigravityFileManager_Setup
+OutputBaseFilename=CleanSweep_Setup_v2
 Compression=lzma
 SolidCompression=yes
 ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
 
 [Files]
-Source: "dist\main.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "dist\CleanSweep.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{group}\Antigravity File Manager"; Filename: "{app}\main.exe"
-Name: "{autodesktop}\Antigravity File Manager"; Filename: "{app}\main.exe"
+Name: "{group}\CleanSweep"; Filename: "{app}\CleanSweep.exe"
+Name: "{autodesktop}\CleanSweep"; Filename: "{app}\CleanSweep.exe"
 
 [Run]
-Filename: "{app}\main.exe"; Description: "{cm:LaunchProgram,Antigravity File Manager}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\CleanSweep.exe"; Description: "{cm:LaunchProgram,CleanSweep}"; Flags: nowait postinstall skipifsilent

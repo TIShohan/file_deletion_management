@@ -1,7 +1,7 @@
 # Progress & Context: File Deletion Management Tool
 
 ## Current Status
-- **Phase**: Done (Packaging & Deployment)
+- **Phase**: Done (Migration to CustomTkinter)
 - **Completion**: 100%
 - **Last Updated**: 2026-01-18
 
@@ -23,11 +23,15 @@ This project aims to convert a Python prototype (`File Size Rearranging.py`) whi
     *   `tasklist.md`: Detailed construction steps.
 
 ## Recent Changes
+- **Flet 0.80.2 Compatibility Fix**: Resolved a "blank screen" issue caused by breaking Flet API changes.
+    - Switched `ft.app()` to `ft.run()`.
+    - Replaced `page.views` routing with a direct `page.add()` layout for more reliable rendering.
+    - Renamed conflicting `self.page` properties in UI classes to `self._page`.
+    - Fixed `FilePicker` and `Alignment` API changes.
 - Finalized tech stack: **Flet + SQLite + Tiered Hashing**.
 - Updated `projectbrief.md` and `tasklist.md` to reflect the high-performance architecture.
-- Documented the workflow for background scanning and main thread responsiveness.
 
 ## Next Steps
-- Initialize the project structure.
-- Decide on the GUI framework (CustomTkinter, PyQt6, or Flet).
-- Begin refactoring backend logic from the prototype.
+- Finalize the layout styling to ensure the UI fills the screen correctly in the new Flet version.
+- Test the high-performance scanner worker with the updated UI signals.
+- Begin the packaging test for the standalone `.exe`.

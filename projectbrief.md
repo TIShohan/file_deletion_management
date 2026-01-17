@@ -31,12 +31,12 @@ Convert the prototype file management script into a professional, modern Windows
    - Multi-step confirmation for actual deletion.
 
 ## Technical Goals & Requirements
-- **GUI Framework**: **Flet** (Flutter-based Python framework) for a high-performance, premium, and modern user interface.
+- **GUI Framework**: **CustomTkinter** for a robust, high-performance, and modern Windows-native user interface.
 - **Scanning Engine**: Optimized with **Tiered Hashing** (Size check -> Quick Hash -> Full Hash) for maximum speed.
 - **Data Persistence**: **SQLite** backend for efficient handling of large datasets (scanning millions of files without RAM bloat).
 - **Concurrency**: Multi-threaded architecture to keep the UI responsive during deep scans.
 - **Packaging**: Standalone `.exe` via PyInstaller, bundled with a professional **Inno Setup** installer.
-- **Aesthetics**: Modern "Glassmorphism" or "Fluent" design with rich animations and icons.
+- **Aesthetics**: Modern "Dark Mode" design with custom-styled widgets and smooth interactions.
 
 ## Target Audience
 Users looking for a simple yet powerful tool to manage local storage, find duplicates, and clean up junk files.

@@ -31,146 +31,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_threading_local.py',
    'PYMODULE'),
-  ('anyio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\__init__.py',
-   'PYMODULE'),
-  ('anyio._backends',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_backends\\__init__.py',
-   'PYMODULE'),
-  ('anyio._backends._asyncio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py',
-   'PYMODULE'),
-  ('anyio._backends._trio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_backends\\_trio.py',
-   'PYMODULE'),
-  ('anyio._core',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\__init__.py',
-   'PYMODULE'),
-  ('anyio._core._asyncio_selector_thread',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_asyncio_selector_thread.py',
-   'PYMODULE'),
-  ('anyio._core._contextmanagers',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_contextmanagers.py',
-   'PYMODULE'),
-  ('anyio._core._eventloop',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_eventloop.py',
-   'PYMODULE'),
-  ('anyio._core._exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_exceptions.py',
-   'PYMODULE'),
-  ('anyio._core._fileio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_fileio.py',
-   'PYMODULE'),
-  ('anyio._core._resources',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_resources.py',
-   'PYMODULE'),
-  ('anyio._core._signals',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_signals.py',
-   'PYMODULE'),
-  ('anyio._core._sockets',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_sockets.py',
-   'PYMODULE'),
-  ('anyio._core._streams',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_streams.py',
-   'PYMODULE'),
-  ('anyio._core._subprocesses',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_subprocesses.py',
-   'PYMODULE'),
-  ('anyio._core._synchronization',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_synchronization.py',
-   'PYMODULE'),
-  ('anyio._core._tasks',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_tasks.py',
-   'PYMODULE'),
-  ('anyio._core._tempfile',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_tempfile.py',
-   'PYMODULE'),
-  ('anyio._core._testing',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_testing.py',
-   'PYMODULE'),
-  ('anyio._core._typedattr',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\_core\\_typedattr.py',
-   'PYMODULE'),
-  ('anyio.abc',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\__init__.py',
-   'PYMODULE'),
-  ('anyio.abc._eventloop',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_eventloop.py',
-   'PYMODULE'),
-  ('anyio.abc._resources',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_resources.py',
-   'PYMODULE'),
-  ('anyio.abc._sockets',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_sockets.py',
-   'PYMODULE'),
-  ('anyio.abc._streams',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_streams.py',
-   'PYMODULE'),
-  ('anyio.abc._subprocesses',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_subprocesses.py',
-   'PYMODULE'),
-  ('anyio.abc._tasks',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_tasks.py',
-   'PYMODULE'),
-  ('anyio.abc._testing',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\abc\\_testing.py',
-   'PYMODULE'),
-  ('anyio.from_thread',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\from_thread.py',
-   'PYMODULE'),
-  ('anyio.lowlevel',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\lowlevel.py',
-   'PYMODULE'),
-  ('anyio.streams',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\streams\\__init__.py',
-   'PYMODULE'),
-  ('anyio.streams.memory',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\streams\\memory.py',
-   'PYMODULE'),
-  ('anyio.streams.stapled',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\streams\\stapled.py',
-   'PYMODULE'),
-  ('anyio.streams.tls',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\streams\\tls.py',
-   'PYMODULE'),
-  ('anyio.to_thread',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\anyio\\to_thread.py',
-   'PYMODULE'),
   ('argparse',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\argparse.py',
@@ -331,14 +191,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\calendar.py',
    'PYMODULE'),
-  ('certifi',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\certifi\\__init__.py',
-   'PYMODULE'),
-  ('certifi.core',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\certifi\\core.py',
-   'PYMODULE'),
   ('code',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\code.py',
@@ -417,6 +269,198 @@
   ('ctypes.wintypes',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('customtkinter',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_input_dialog',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\ctk_input_dialog.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_tk',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\ctk_tk.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_toplevel',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\ctk_toplevel.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_base_class',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_tracker',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.ctk_canvas',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\ctk_canvas.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.draw_engine',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\draw_engine.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.ctk_base_class',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\ctk_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.dropdown_menu',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\dropdown_menu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_button',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_checkbox',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_checkbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_combobox',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_combobox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_entry',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_entry.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_frame',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_label',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_label.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_optionmenu',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_optionmenu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_progressbar',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_progressbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_radiobutton',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_radiobutton.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollable_frame',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollable_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollbar',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_segmented_button',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_segmented_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_slider',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_slider.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_switch',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_switch.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_tabview',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_tabview.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_textbox',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_textbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.ctk_font',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\ctk_font.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.font_manager',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\font_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image.ctk_image',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\ctk_image.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_base_class',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_tracker',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme.theme_manager',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\theme_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility.utility_functions',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\utility_functions.py',
+   'PYMODULE'),
+  ('darkdetect',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\darkdetect\\__init__.py',
+   'PYMODULE'),
+  ('darkdetect._dummy',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\darkdetect\\_dummy.py',
+   'PYMODULE'),
+  ('darkdetect._linux_detect',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\darkdetect\\_linux_detect.py',
+   'PYMODULE'),
+  ('darkdetect._mac_detect',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\darkdetect\\_mac_detect.py',
+   'PYMODULE'),
+  ('darkdetect._windows_detect',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\darkdetect\\_windows_detect.py',
    'PYMODULE'),
   ('dataclasses',
    'C:\\Users\\MY '
@@ -513,955 +557,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\utils.py',
    'PYMODULE'),
-  ('flet',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\__init__.py',
-   'PYMODULE'),
-  ('flet.app',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\app.py',
-   'PYMODULE'),
-  ('flet.auth',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\__init__.py',
-   'PYMODULE'),
-  ('flet.auth.authorization',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\authorization.py',
-   'PYMODULE'),
-  ('flet.auth.authorization_service',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\authorization_service.py',
-   'PYMODULE'),
-  ('flet.auth.group',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\group.py',
-   'PYMODULE'),
-  ('flet.auth.oauth_provider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\oauth_provider.py',
-   'PYMODULE'),
-  ('flet.auth.oauth_token',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\oauth_token.py',
-   'PYMODULE'),
-  ('flet.auth.user',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\auth\\user.py',
-   'PYMODULE'),
-  ('flet.components',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\__init__.py',
-   'PYMODULE'),
-  ('flet.components.component',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\component.py',
-   'PYMODULE'),
-  ('flet.components.component_decorator',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\component_decorator.py',
-   'PYMODULE'),
-  ('flet.components.component_owned',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\component_owned.py',
-   'PYMODULE'),
-  ('flet.components.hooks',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\__init__.py',
-   'PYMODULE'),
-  ('flet.components.hooks.hook',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\hook.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_callback',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_callback.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_context',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_context.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_effect',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_effect.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_memo',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_memo.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_ref',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_ref.py',
-   'PYMODULE'),
-  ('flet.components.hooks.use_state',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\hooks\\use_state.py',
-   'PYMODULE'),
-  ('flet.components.memo',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\memo.py',
-   'PYMODULE'),
-  ('flet.components.observable',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\observable.py',
-   'PYMODULE'),
-  ('flet.components.public_utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\public_utils.py',
-   'PYMODULE'),
-  ('flet.components.utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\components\\utils.py',
-   'PYMODULE'),
-  ('flet.controls',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\__init__.py',
-   'PYMODULE'),
-  ('flet.controls.adaptive_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\adaptive_control.py',
-   'PYMODULE'),
-  ('flet.controls.alignment',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\alignment.py',
-   'PYMODULE'),
-  ('flet.controls.animation',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\animation.py',
-   'PYMODULE'),
-  ('flet.controls.base_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\base_control.py',
-   'PYMODULE'),
-  ('flet.controls.base_page',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\base_page.py',
-   'PYMODULE'),
-  ('flet.controls.blur',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\blur.py',
-   'PYMODULE'),
-  ('flet.controls.border',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\border.py',
-   'PYMODULE'),
-  ('flet.controls.border_radius',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\border_radius.py',
-   'PYMODULE'),
-  ('flet.controls.box',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\box.py',
-   'PYMODULE'),
-  ('flet.controls.buttons',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\buttons.py',
-   'PYMODULE'),
-  ('flet.controls.colors',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\colors.py',
-   'PYMODULE'),
-  ('flet.controls.context',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\context.py',
-   'PYMODULE'),
-  ('flet.controls.control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\control.py',
-   'PYMODULE'),
-  ('flet.controls.control_event',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\control_event.py',
-   'PYMODULE'),
-  ('flet.controls.control_state',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\control_state.py',
-   'PYMODULE'),
-  ('flet.controls.core',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\__init__.py',
-   'PYMODULE'),
-  ('flet.controls.core.animated_switcher',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\animated_switcher.py',
-   'PYMODULE'),
-  ('flet.controls.core.autofill_group',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\autofill_group.py',
-   'PYMODULE'),
-  ('flet.controls.core.column',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\column.py',
-   'PYMODULE'),
-  ('flet.controls.core.dismissible',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\dismissible.py',
-   'PYMODULE'),
-  ('flet.controls.core.drag_target',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\drag_target.py',
-   'PYMODULE'),
-  ('flet.controls.core.draggable',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\draggable.py',
-   'PYMODULE'),
-  ('flet.controls.core.flet_app',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\flet_app.py',
-   'PYMODULE'),
-  ('flet.controls.core.gesture_detector',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\gesture_detector.py',
-   'PYMODULE'),
-  ('flet.controls.core.grid_view',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\grid_view.py',
-   'PYMODULE'),
-  ('flet.controls.core.icon',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\icon.py',
-   'PYMODULE'),
-  ('flet.controls.core.image',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\image.py',
-   'PYMODULE'),
-  ('flet.controls.core.interactive_viewer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\interactive_viewer.py',
-   'PYMODULE'),
-  ('flet.controls.core.keyboard_listener',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\keyboard_listener.py',
-   'PYMODULE'),
-  ('flet.controls.core.list_view',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\list_view.py',
-   'PYMODULE'),
-  ('flet.controls.core.markdown',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\markdown.py',
-   'PYMODULE'),
-  ('flet.controls.core.merge_semantics',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\merge_semantics.py',
-   'PYMODULE'),
-  ('flet.controls.core.pagelet',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\pagelet.py',
-   'PYMODULE'),
-  ('flet.controls.core.placeholder',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\placeholder.py',
-   'PYMODULE'),
-  ('flet.controls.core.reorderable_drag_handle',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\reorderable_drag_handle.py',
-   'PYMODULE'),
-  ('flet.controls.core.responsive_row',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\responsive_row.py',
-   'PYMODULE'),
-  ('flet.controls.core.row',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\row.py',
-   'PYMODULE'),
-  ('flet.controls.core.safe_area',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\safe_area.py',
-   'PYMODULE'),
-  ('flet.controls.core.screenshot',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\screenshot.py',
-   'PYMODULE'),
-  ('flet.controls.core.semantics',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\semantics.py',
-   'PYMODULE'),
-  ('flet.controls.core.shader_mask',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\shader_mask.py',
-   'PYMODULE'),
-  ('flet.controls.core.shimmer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\shimmer.py',
-   'PYMODULE'),
-  ('flet.controls.core.stack',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\stack.py',
-   'PYMODULE'),
-  ('flet.controls.core.text',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\text.py',
-   'PYMODULE'),
-  ('flet.controls.core.text_span',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\text_span.py',
-   'PYMODULE'),
-  ('flet.controls.core.transparent_pointer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\transparent_pointer.py',
-   'PYMODULE'),
-  ('flet.controls.core.view',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\view.py',
-   'PYMODULE'),
-  ('flet.controls.core.window',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\window.py',
-   'PYMODULE'),
-  ('flet.controls.core.window_drag_area',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\core\\window_drag_area.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\__init__.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_action_sheet',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_action_sheet.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_action_sheet_action',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_action_sheet_action.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_activity_indicator',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_activity_indicator.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_alert_dialog',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_alert_dialog.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_app_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_app_bar.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_bottom_sheet',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_bottom_sheet.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_button.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_checkbox',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_checkbox.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_colors',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_colors.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_context_menu',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_context_menu.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_context_menu_action',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_context_menu_action.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_date_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_date_picker.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_dialog_action',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_dialog_action.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_filled_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_filled_button.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_icons',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_icons.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_list_tile',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_list_tile.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_navigation_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_navigation_bar.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_picker.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_radio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_radio.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_segmented_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_segmented_button.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_slider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_slider.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_sliding_segmented_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_sliding_segmented_button.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_switch',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_switch.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_textfield',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_textfield.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_timer_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_timer_picker.py',
-   'PYMODULE'),
-  ('flet.controls.cupertino.cupertino_tinted_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\cupertino\\cupertino_tinted_button.py',
-   'PYMODULE'),
-  ('flet.controls.device_info',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\device_info.py',
-   'PYMODULE'),
-  ('flet.controls.dialog_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\dialog_control.py',
-   'PYMODULE'),
-  ('flet.controls.duration',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\duration.py',
-   'PYMODULE'),
-  ('flet.controls.embed_json_encoder',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\embed_json_encoder.py',
-   'PYMODULE'),
-  ('flet.controls.events',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\events.py',
-   'PYMODULE'),
-  ('flet.controls.exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\exceptions.py',
-   'PYMODULE'),
-  ('flet.controls.geometry',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\geometry.py',
-   'PYMODULE'),
-  ('flet.controls.gradients',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\gradients.py',
-   'PYMODULE'),
-  ('flet.controls.icon_data',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\icon_data.py',
-   'PYMODULE'),
-  ('flet.controls.id_counter',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\id_counter.py',
-   'PYMODULE'),
-  ('flet.controls.keys',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\keys.py',
-   'PYMODULE'),
-  ('flet.controls.layout_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\layout_control.py',
-   'PYMODULE'),
-  ('flet.controls.margin',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\margin.py',
-   'PYMODULE'),
-  ('flet.controls.material',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\__init__.py',
-   'PYMODULE'),
-  ('flet.controls.material.alert_dialog',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\alert_dialog.py',
-   'PYMODULE'),
-  ('flet.controls.material.app_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\app_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.auto_complete',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\auto_complete.py',
-   'PYMODULE'),
-  ('flet.controls.material.badge',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\badge.py',
-   'PYMODULE'),
-  ('flet.controls.material.banner',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\banner.py',
-   'PYMODULE'),
-  ('flet.controls.material.bottom_app_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\bottom_app_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.bottom_sheet',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\bottom_sheet.py',
-   'PYMODULE'),
-  ('flet.controls.material.button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\button.py',
-   'PYMODULE'),
-  ('flet.controls.material.card',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\card.py',
-   'PYMODULE'),
-  ('flet.controls.material.checkbox',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\checkbox.py',
-   'PYMODULE'),
-  ('flet.controls.material.chip',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\chip.py',
-   'PYMODULE'),
-  ('flet.controls.material.circle_avatar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\circle_avatar.py',
-   'PYMODULE'),
-  ('flet.controls.material.container',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\container.py',
-   'PYMODULE'),
-  ('flet.controls.material.context_menu',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\context_menu.py',
-   'PYMODULE'),
-  ('flet.controls.material.datatable',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\datatable.py',
-   'PYMODULE'),
-  ('flet.controls.material.date_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\date_picker.py',
-   'PYMODULE'),
-  ('flet.controls.material.date_range_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\date_range_picker.py',
-   'PYMODULE'),
-  ('flet.controls.material.divider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\divider.py',
-   'PYMODULE'),
-  ('flet.controls.material.dropdown',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\dropdown.py',
-   'PYMODULE'),
-  ('flet.controls.material.dropdownm2',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\dropdownm2.py',
-   'PYMODULE'),
-  ('flet.controls.material.elevated_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\elevated_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.expansion_panel',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\expansion_panel.py',
-   'PYMODULE'),
-  ('flet.controls.material.expansion_tile',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\expansion_tile.py',
-   'PYMODULE'),
-  ('flet.controls.material.filled_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\filled_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.filled_tonal_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\filled_tonal_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.floating_action_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\floating_action_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.form_field_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\form_field_control.py',
-   'PYMODULE'),
-  ('flet.controls.material.icon_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\icon_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.icons',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\icons.py',
-   'PYMODULE'),
-  ('flet.controls.material.list_tile',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\list_tile.py',
-   'PYMODULE'),
-  ('flet.controls.material.menu_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\menu_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.menu_item_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\menu_item_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.navigation_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\navigation_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.navigation_drawer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\navigation_drawer.py',
-   'PYMODULE'),
-  ('flet.controls.material.navigation_rail',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\navigation_rail.py',
-   'PYMODULE'),
-  ('flet.controls.material.outlined_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\outlined_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.popup_menu_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\popup_menu_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.progress_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\progress_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.progress_ring',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\progress_ring.py',
-   'PYMODULE'),
-  ('flet.controls.material.radio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\radio.py',
-   'PYMODULE'),
-  ('flet.controls.material.radio_group',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\radio_group.py',
-   'PYMODULE'),
-  ('flet.controls.material.range_slider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\range_slider.py',
-   'PYMODULE'),
-  ('flet.controls.material.reorderable_list_view',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\reorderable_list_view.py',
-   'PYMODULE'),
-  ('flet.controls.material.search_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\search_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.segmented_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\segmented_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.selection_area',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\selection_area.py',
-   'PYMODULE'),
-  ('flet.controls.material.slider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\slider.py',
-   'PYMODULE'),
-  ('flet.controls.material.snack_bar',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\snack_bar.py',
-   'PYMODULE'),
-  ('flet.controls.material.submenu_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\submenu_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.switch',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\switch.py',
-   'PYMODULE'),
-  ('flet.controls.material.tabs',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\tabs.py',
-   'PYMODULE'),
-  ('flet.controls.material.text_button',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\text_button.py',
-   'PYMODULE'),
-  ('flet.controls.material.textfield',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\textfield.py',
-   'PYMODULE'),
-  ('flet.controls.material.time_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\time_picker.py',
-   'PYMODULE'),
-  ('flet.controls.material.tooltip',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\tooltip.py',
-   'PYMODULE'),
-  ('flet.controls.material.vertical_divider',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\material\\vertical_divider.py',
-   'PYMODULE'),
-  ('flet.controls.multi_view',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\multi_view.py',
-   'PYMODULE'),
-  ('flet.controls.object_patch',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\object_patch.py',
-   'PYMODULE'),
-  ('flet.controls.padding',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\padding.py',
-   'PYMODULE'),
-  ('flet.controls.page',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\page.py',
-   'PYMODULE'),
-  ('flet.controls.painting',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\painting.py',
-   'PYMODULE'),
-  ('flet.controls.query_string',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\query_string.py',
-   'PYMODULE'),
-  ('flet.controls.ref',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\ref.py',
-   'PYMODULE'),
-  ('flet.controls.scrollable_control',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\scrollable_control.py',
-   'PYMODULE'),
-  ('flet.controls.services',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\__init__.py',
-   'PYMODULE'),
-  ('flet.controls.services.accelerometer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\accelerometer.py',
-   'PYMODULE'),
-  ('flet.controls.services.barometer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\barometer.py',
-   'PYMODULE'),
-  ('flet.controls.services.battery',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\battery.py',
-   'PYMODULE'),
-  ('flet.controls.services.browser_context_menu',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\browser_context_menu.py',
-   'PYMODULE'),
-  ('flet.controls.services.clipboard',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\clipboard.py',
-   'PYMODULE'),
-  ('flet.controls.services.connectivity',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\connectivity.py',
-   'PYMODULE'),
-  ('flet.controls.services.file_picker',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\file_picker.py',
-   'PYMODULE'),
-  ('flet.controls.services.gyroscope',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\gyroscope.py',
-   'PYMODULE'),
-  ('flet.controls.services.haptic_feedback',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\haptic_feedback.py',
-   'PYMODULE'),
-  ('flet.controls.services.magnetometer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\magnetometer.py',
-   'PYMODULE'),
-  ('flet.controls.services.screen_brightness',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\screen_brightness.py',
-   'PYMODULE'),
-  ('flet.controls.services.semantics_service',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\semantics_service.py',
-   'PYMODULE'),
-  ('flet.controls.services.sensor_error_event',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\sensor_error_event.py',
-   'PYMODULE'),
-  ('flet.controls.services.service',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\service.py',
-   'PYMODULE'),
-  ('flet.controls.services.shake_detector',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\shake_detector.py',
-   'PYMODULE'),
-  ('flet.controls.services.share',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\share.py',
-   'PYMODULE'),
-  ('flet.controls.services.shared_preferences',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\shared_preferences.py',
-   'PYMODULE'),
-  ('flet.controls.services.storage_paths',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\storage_paths.py',
-   'PYMODULE'),
-  ('flet.controls.services.url_launcher',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\url_launcher.py',
-   'PYMODULE'),
-  ('flet.controls.services.user_accelerometer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\user_accelerometer.py',
-   'PYMODULE'),
-  ('flet.controls.services.wakelock',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\services\\wakelock.py',
-   'PYMODULE'),
-  ('flet.controls.template_route',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\template_route.py',
-   'PYMODULE'),
-  ('flet.controls.text_style',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\text_style.py',
-   'PYMODULE'),
-  ('flet.controls.theme',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\theme.py',
-   'PYMODULE'),
-  ('flet.controls.transform',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\transform.py',
-   'PYMODULE'),
-  ('flet.controls.types',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\controls\\types.py',
-   'PYMODULE'),
-  ('flet.messaging', '-', 'PYMODULE'),
-  ('flet.messaging.connection',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\connection.py',
-   'PYMODULE'),
-  ('flet.messaging.flet_socket_server',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\flet_socket_server.py',
-   'PYMODULE'),
-  ('flet.messaging.protocol',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\protocol.py',
-   'PYMODULE'),
-  ('flet.messaging.pyodide_connection',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\pyodide_connection.py',
-   'PYMODULE'),
-  ('flet.messaging.session',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\session.py',
-   'PYMODULE'),
-  ('flet.messaging.session_store',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\messaging\\session_store.py',
-   'PYMODULE'),
-  ('flet.pubsub',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\pubsub\\__init__.py',
-   'PYMODULE'),
-  ('flet.pubsub.pubsub_client',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\pubsub\\pubsub_client.py',
-   'PYMODULE'),
-  ('flet.pubsub.pubsub_hub',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\pubsub\\pubsub_hub.py',
-   'PYMODULE'),
-  ('flet.utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\__init__.py',
-   'PYMODULE'),
-  ('flet.utils.browser',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\browser.py',
-   'PYMODULE'),
-  ('flet.utils.classproperty',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\classproperty.py',
-   'PYMODULE'),
-  ('flet.utils.deprecated',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\deprecated.py',
-   'PYMODULE'),
-  ('flet.utils.deprecated_enum',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\deprecated_enum.py',
-   'PYMODULE'),
-  ('flet.utils.files',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\files.py',
-   'PYMODULE'),
-  ('flet.utils.from_dict',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\from_dict.py',
-   'PYMODULE'),
-  ('flet.utils.hashing',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\hashing.py',
-   'PYMODULE'),
-  ('flet.utils.json_utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\json_utils.py',
-   'PYMODULE'),
-  ('flet.utils.locks',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\locks.py',
-   'PYMODULE'),
-  ('flet.utils.network',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\network.py',
-   'PYMODULE'),
-  ('flet.utils.object_model',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\object_model.py',
-   'PYMODULE'),
-  ('flet.utils.once',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\once.py',
-   'PYMODULE'),
-  ('flet.utils.pip',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\pip.py',
-   'PYMODULE'),
-  ('flet.utils.platform_utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\platform_utils.py',
-   'PYMODULE'),
-  ('flet.utils.slugify',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\slugify.py',
-   'PYMODULE'),
-  ('flet.utils.strings',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\strings.py',
-   'PYMODULE'),
-  ('flet.utils.vector',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\utils\\vector.py',
-   'PYMODULE'),
-  ('flet.version',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet\\version.py',
-   'PYMODULE'),
-  ('flet_desktop',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet_desktop\\__init__.py',
-   'PYMODULE'),
-  ('flet_desktop.version',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\flet_desktop\\version.py',
-   'PYMODULE'),
   ('fnmatch',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\fnmatch.py',
@@ -1490,50 +585,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\gzip.py',
    'PYMODULE'),
-  ('h11',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\__init__.py',
-   'PYMODULE'),
-  ('h11._abnf',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_abnf.py',
-   'PYMODULE'),
-  ('h11._connection',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_connection.py',
-   'PYMODULE'),
-  ('h11._events',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_events.py',
-   'PYMODULE'),
-  ('h11._headers',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_headers.py',
-   'PYMODULE'),
-  ('h11._readers',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_readers.py',
-   'PYMODULE'),
-  ('h11._receivebuffer',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_receivebuffer.py',
-   'PYMODULE'),
-  ('h11._state',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_state.py',
-   'PYMODULE'),
-  ('h11._util',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_util.py',
-   'PYMODULE'),
-  ('h11._version',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_version.py',
-   'PYMODULE'),
-  ('h11._writers',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\h11\\_writers.py',
-   'PYMODULE'),
   ('hashlib',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\hashlib.py',
@@ -1553,246 +604,6 @@
   ('http.cookiejar',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\cookiejar.py',
-   'PYMODULE'),
-  ('httpcore',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\__init__.py',
-   'PYMODULE'),
-  ('httpcore._api',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_api.py',
-   'PYMODULE'),
-  ('httpcore._async',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\__init__.py',
-   'PYMODULE'),
-  ('httpcore._async.connection',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\connection.py',
-   'PYMODULE'),
-  ('httpcore._async.connection_pool',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\connection_pool.py',
-   'PYMODULE'),
-  ('httpcore._async.http11',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\http11.py',
-   'PYMODULE'),
-  ('httpcore._async.http2',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\http2.py',
-   'PYMODULE'),
-  ('httpcore._async.http_proxy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\http_proxy.py',
-   'PYMODULE'),
-  ('httpcore._async.interfaces',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\interfaces.py',
-   'PYMODULE'),
-  ('httpcore._async.socks_proxy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_async\\socks_proxy.py',
-   'PYMODULE'),
-  ('httpcore._backends',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\__init__.py',
-   'PYMODULE'),
-  ('httpcore._backends.anyio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\anyio.py',
-   'PYMODULE'),
-  ('httpcore._backends.auto',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\auto.py',
-   'PYMODULE'),
-  ('httpcore._backends.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\base.py',
-   'PYMODULE'),
-  ('httpcore._backends.mock',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\mock.py',
-   'PYMODULE'),
-  ('httpcore._backends.sync',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\sync.py',
-   'PYMODULE'),
-  ('httpcore._backends.trio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_backends\\trio.py',
-   'PYMODULE'),
-  ('httpcore._exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_exceptions.py',
-   'PYMODULE'),
-  ('httpcore._models',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_models.py',
-   'PYMODULE'),
-  ('httpcore._ssl',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_ssl.py',
-   'PYMODULE'),
-  ('httpcore._sync',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\__init__.py',
-   'PYMODULE'),
-  ('httpcore._sync.connection',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\connection.py',
-   'PYMODULE'),
-  ('httpcore._sync.connection_pool',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\connection_pool.py',
-   'PYMODULE'),
-  ('httpcore._sync.http11',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\http11.py',
-   'PYMODULE'),
-  ('httpcore._sync.http2',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\http2.py',
-   'PYMODULE'),
-  ('httpcore._sync.http_proxy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\http_proxy.py',
-   'PYMODULE'),
-  ('httpcore._sync.interfaces',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\interfaces.py',
-   'PYMODULE'),
-  ('httpcore._sync.socks_proxy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_sync\\socks_proxy.py',
-   'PYMODULE'),
-  ('httpcore._synchronization',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_synchronization.py',
-   'PYMODULE'),
-  ('httpcore._trace',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_trace.py',
-   'PYMODULE'),
-  ('httpcore._utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpcore\\_utils.py',
-   'PYMODULE'),
-  ('httpx',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\__init__.py',
-   'PYMODULE'),
-  ('httpx.__version__',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\__version__.py',
-   'PYMODULE'),
-  ('httpx._api',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_api.py',
-   'PYMODULE'),
-  ('httpx._auth',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_auth.py',
-   'PYMODULE'),
-  ('httpx._client',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_client.py',
-   'PYMODULE'),
-  ('httpx._config',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_config.py',
-   'PYMODULE'),
-  ('httpx._content',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_content.py',
-   'PYMODULE'),
-  ('httpx._decoders',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_decoders.py',
-   'PYMODULE'),
-  ('httpx._exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_exceptions.py',
-   'PYMODULE'),
-  ('httpx._main',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_main.py',
-   'PYMODULE'),
-  ('httpx._models',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_models.py',
-   'PYMODULE'),
-  ('httpx._multipart',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_multipart.py',
-   'PYMODULE'),
-  ('httpx._status_codes',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_status_codes.py',
-   'PYMODULE'),
-  ('httpx._transports',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\__init__.py',
-   'PYMODULE'),
-  ('httpx._transports.asgi',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\asgi.py',
-   'PYMODULE'),
-  ('httpx._transports.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\base.py',
-   'PYMODULE'),
-  ('httpx._transports.default',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\default.py',
-   'PYMODULE'),
-  ('httpx._transports.mock',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\mock.py',
-   'PYMODULE'),
-  ('httpx._transports.wsgi',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_transports\\wsgi.py',
-   'PYMODULE'),
-  ('httpx._types',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_types.py',
-   'PYMODULE'),
-  ('httpx._urlparse',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_urlparse.py',
-   'PYMODULE'),
-  ('httpx._urls',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_urls.py',
-   'PYMODULE'),
-  ('httpx._utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\httpx\\_utils.py',
-   'PYMODULE'),
-  ('idna',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\__init__.py',
-   'PYMODULE'),
-  ('idna.core',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\core.py',
-   'PYMODULE'),
-  ('idna.idnadata',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\idnadata.py',
-   'PYMODULE'),
-  ('idna.intranges',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\intranges.py',
-   'PYMODULE'),
-  ('idna.package_data',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\package_data.py',
-   'PYMODULE'),
-  ('idna.uts46data',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
   ('importlib',
    'C:\\Users\\MY '
@@ -1918,22 +729,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\mimetypes.py',
    'PYMODULE'),
-  ('msgpack',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\msgpack\\__init__.py',
-   'PYMODULE'),
-  ('msgpack.exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\msgpack\\exceptions.py',
-   'PYMODULE'),
-  ('msgpack.ext',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\msgpack\\ext.py',
-   'PYMODULE'),
-  ('msgpack.fallback',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\msgpack\\fallback.py',
-   'PYMODULE'),
   ('multiprocessing',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\multiprocessing\\__init__.py',
@@ -2038,241 +833,21 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\numbers.py',
    'PYMODULE'),
-  ('oauthlib',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.common',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\common.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.backend_application',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\backend_application.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\base.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.legacy_application',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\legacy_application.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.mobile_application',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\mobile_application.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.service_application',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\service_application.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.clients.web_application',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\web_application.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.authorization',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\authorization.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\base.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.introspect',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\introspect.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.metadata',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\metadata.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.pre_configured',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\pre_configured.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.resource',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\resource.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.revocation',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\revocation.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.endpoints.token',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\token.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.errors',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\errors.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.authorization_code',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\authorization_code.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\base.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.client_credentials',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\client_credentials.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.implicit',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\implicit.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.refresh_token',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\refresh_token.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\resource_owner_password_credentials.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.parameters',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\parameters.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.request_validator',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\request_validator.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.tokens',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\tokens.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc6749.utils',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\utils.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.clients',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\clients\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.clients.device',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\clients\\device.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.endpoints',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.endpoints.device_authorization',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\device_authorization.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.endpoints.pre_configured',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\pre_configured.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.errors',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\errors.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.grant_types',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\grant_types\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.oauth2.rfc8628.grant_types.device_code',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\grant_types\\device_code.py',
-   'PYMODULE'),
-  ('oauthlib.openid',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.endpoints',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.endpoints.pre_configured',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\pre_configured.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.endpoints.userinfo',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\userinfo.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\__init__.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.authorization_code',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\authorization_code.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.base',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\base.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.dispatchers',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\dispatchers.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.hybrid',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\hybrid.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.implicit',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\implicit.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.grant_types.refresh_token',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\refresh_token.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.request_validator',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\request_validator.py',
-   'PYMODULE'),
-  ('oauthlib.openid.connect.core.tokens',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\openid\\connect\\core\\tokens.py',
-   'PYMODULE'),
-  ('oauthlib.signals',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\signals.py',
-   'PYMODULE'),
-  ('oauthlib.uri_validate',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\oauthlib\\uri_validate.py',
-   'PYMODULE'),
   ('opcode',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('packaging',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\packaging\\version.py',
    'PYMODULE'),
   ('pathlib',
    'C:\\Users\\MY '
@@ -2310,10 +885,6 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\random.py',
    'PYMODULE'),
-  ('repath',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\repath.py',
-   'PYMODULE'),
   ('runpy',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\runpy.py',
@@ -2327,56 +898,52 @@
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\selectors.py',
    'PYMODULE'),
   ('send2trash',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\__init__.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\__init__.py',
    'PYMODULE'),
   ('send2trash.exceptions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\exceptions.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\exceptions.py',
    'PYMODULE'),
   ('send2trash.mac',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\__init__.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\mac\\__init__.py',
    'PYMODULE'),
   ('send2trash.mac.legacy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\legacy.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\mac\\legacy.py',
    'PYMODULE'),
   ('send2trash.mac.modern',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\mac\\modern.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\mac\\modern.py',
    'PYMODULE'),
   ('send2trash.plat_gio',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_gio.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\plat_gio.py',
    'PYMODULE'),
   ('send2trash.plat_other',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\plat_other.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\plat_other.py',
    'PYMODULE'),
   ('send2trash.util',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\util.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\util.py',
    'PYMODULE'),
   ('send2trash.win',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\__init__.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\win\\__init__.py',
    'PYMODULE'),
   ('send2trash.win.IFileOperationProgressSink',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\IFileOperationProgressSink.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\win\\IFileOperationProgressSink.py',
    'PYMODULE'),
   ('send2trash.win.legacy',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\legacy.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\win\\legacy.py',
    'PYMODULE'),
   ('send2trash.win.modern',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\send2trash\\win\\modern.py',
-   'PYMODULE'),
-  ('shlex',
    'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\shlex.py',
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\send2trash\\win\\modern.py',
    'PYMODULE'),
   ('shutil',
    'C:\\Users\\MY '
@@ -2385,10 +952,6 @@
   ('signal',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\signal.py',
-   'PYMODULE'),
-  ('six',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\six.py',
    'PYMODULE'),
   ('socket',
    'C:\\Users\\MY '
@@ -2445,6 +1008,42 @@
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\threading.py',
    'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\__init__.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.dialog',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\dialog.py',
+   'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.font',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\font.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
+  ('tkinter.ttk',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\tkinter\\ttk.py',
+   'PYMODULE'),
   ('token',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\token.py',
@@ -2462,21 +1061,25 @@
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\typing.py',
    'PYMODULE'),
   ('typing_extensions',
-   'E:\\My Built '
-   'Softwares\\file_deletion_management\\venv\\Lib\\site-packages\\typing_extensions.py',
+   'C:\\Users\\MY '
+   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\typing_extensions.py',
    'PYMODULE'),
   ('ui', '-', 'PYMODULE'),
-  ('ui.dashboard',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\dashboard.py',
+  ('ui.app',
+   'E:\\My Built Softwares\\file_deletion_management\\ui\\app.py',
    'PYMODULE'),
-  ('ui.scanner_view',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\scanner_view.py',
+  ('ui.views', '-', 'PYMODULE'),
+  ('ui.views.dashboard_view',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\views\\dashboard_view.py',
    'PYMODULE'),
-  ('ui.settings',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\settings.py',
+  ('ui.views.scanner_view',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\views\\scanner_view.py',
    'PYMODULE'),
-  ('ui.style',
-   'E:\\My Built Softwares\\file_deletion_management\\ui\\style.py',
+  ('ui.views.settings_view',
+   'E:\\My Built '
+   'Softwares\\file_deletion_management\\ui\\views\\settings_view.py',
    'PYMODULE'),
   ('urllib',
    'C:\\Users\\MY '
@@ -2497,10 +1100,6 @@
   ('urllib.response',
    'C:\\Users\\MY '
    'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\urllib\\response.py',
-   'PYMODULE'),
-  ('webbrowser',
-   'C:\\Users\\MY '
-   'PC\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\webbrowser.py',
    'PYMODULE'),
   ('xml',
    'C:\\Users\\MY '

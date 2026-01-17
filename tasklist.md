@@ -4,10 +4,10 @@ This tasklist outlines the steps to convert the prototype script into a professi
 
 ## Phase 1: Environment & Project Setup
 - [x] Initialize Python virtual environment.
-- [x] Install core dependencies (`flet`, `send2trash`, `pyinstaller`, `pandas`).
+- [x] Install core dependencies (`customtkinter`, `send2trash`, `pyinstaller`, `pandas`).
 - [x] Set up project structure:
     - [x] `/backend`: Scanner, Database, and Logic.
-    - [x] `/ui`: Flet views and components.
+    - [x] `/ui`: CustomTkinter views and components.
     - [x] `/assets`: Icons and branding.
 
 ## Phase 2: High-Performance Backend & Database
@@ -19,12 +19,12 @@ This tasklist outlines the steps to convert the prototype script into a professi
     - [x] Full-hashing for confirmed duplicates.
 - [x] **Multi-threading**: Implement a `Worker` class to run the scanner in the background.
 
-## Phase 3: Flet GUI Development
-- [x] **Design System**: Set up Flet theme (colors, fonts, radii).
+## Phase 3: CustomTkinter GUI Development
+- [x] **Design System**: Set up CustomTkinter theme (colors, fonts).
 - [x] **Navigation Shell**: sidebar-based layout with "Dashboard", "Scanner", and "Trash" views.
 - [x] **Landing Page**: Modern "Select Path" start screen.
 - [x] **Real-time Dashboard**: Live progress bars and file-counting animations.
-- [x] **High-Performance Data Table**: Build a Flet `DataTable` (or custom ListView) to display results from SQLite.
+- [x] **High-Performance Data Table**: Build a styled `ttk.Treeview` to display results from SQLite.
 - [x] **Interactive Filters**: Dynamic UI filters that query SQLite (instant search).
 
 ## Phase 4: Feature Implementation

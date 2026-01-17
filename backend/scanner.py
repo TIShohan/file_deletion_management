@@ -19,7 +19,7 @@ class FileScanner:
             # Skip hidden directories if needed (optional)
             for f in filenames:
                 try:
-                    path = os.path.join(root, f)
+                    path = os.path.normpath(os.path.join(root, f))
                     ext = Path(f).suffix.lower()
                     
                     if ext in self.skip_extensions:
