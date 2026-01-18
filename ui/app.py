@@ -53,14 +53,15 @@ class App(ctk.CTk):
         self.active_view = None
         
         # Initialize Views
-        self.dashboard_view = DashboardView(self, corner_radius=0, fg_color="transparent")
+        self.dashboard_view = DashboardView(self, db=self.db, corner_radius=0, fg_color="transparent")
         self.scanner_view = ScannerView(self, db=self.db, corner_radius=0, fg_color="transparent")
-        self.settings_view = SettingsView(self, corner_radius=0, fg_color="transparent")
+        self.settings_view = SettingsView(self, db=self.db, corner_radius=0, fg_color="transparent")
         
         # Start with dashboard
         self.select_frame_by_name("Dashboard")
 
     def show_dashboard(self):
+        self.dashboard_view.refresh_stats()
         self.select_frame_by_name("Dashboard")
 
     def show_scanner(self):

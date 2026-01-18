@@ -87,8 +87,8 @@ class ScanWorker(threading.Thread):
             if i % 10 == 0:
                 self._update_progress(i, f"Full hashing confirmed matches ({i}/{total_full})...")
 
-        # Mark duplicates in DB
-        self.db.mark_duplicates()
+        # Mark duplicates in DB (default to content for initial scan)
+        self.db.mark_duplicates(mode="content")
 
     def stop(self):
         self.stop_event.set()

@@ -44,3 +44,10 @@ This tasklist outlines the steps to convert the prototype script into a professi
 - [x] Configure PyInstaller spec file for a "One-File" executable (includes Python runtime).
 - [x] **Installer Creation**: Set up Inno Setup or a similar tool to create a user-friendly `.exe` installer.
 - [x] Build standalone executable via PyInstaller.
+
+## Phase 7: Final Development & Refinement (Completed)
+- [x] **7.1 Dashboard Stats**: Connect database queries to display real metrics (Total Scanned, Space, Duplicates).
+- [x] **7.2 Advanced Filtering**: Add UI inputs for Name search, Min Size (MB), and File Age (Days) in Scanner View.
+- [x] **7.3 Duplicate Management**: Implement highlighting and a "Show Duplicates Only" filter in the results table.
+- [x] **7.4 Dry Run Mode**: Implement a safe preview mode to calculate potential results without actual deletion.
+- [x] **7.5 Settings Persistence**: Ensure "Skip Extensions" and other preferences are saved/loaded correctly.
