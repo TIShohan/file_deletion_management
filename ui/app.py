@@ -89,6 +89,17 @@ class App(ctk.CTk):
             self.active_view = self.settings_view
             
         self.active_view.grid(row=0, column=1, sticky="nsew")
+        self.animate_view_entry(self.active_view)
+
+    def animate_view_entry(self, view):
+        """Subtle slide-up effect for CTk"""
+        view.grid(row=0, column=1, pady=(20, 0), sticky="nsew") # Start lower
+        def slide_up(current_y=20):
+            if current_y > 0:
+                new_y = current_y - 2
+                view.grid(row=0, column=1, pady=(new_y, 0), sticky="nsew")
+                self.after(10, lambda: slide_up(new_y))
+        slide_up()
 
     def change_appearance_mode_event(self, new_appearance_mode: str):
         ctk.set_appearance_mode(new_appearance_mode)

@@ -125,15 +125,16 @@ class ScannerView(ctk.CTkFrame):
 
         self.tree.tag_configure("duplicate", background="#3d1414", foreground="#ffaaaa")
 
-        # Scrollbars logic
-        v_scrollbar = ttk.Scrollbar(self.tree_frame, orient="vertical", command=self.tree.yview)
-        h_scrollbar = ttk.Scrollbar(self.tree_frame, orient="horizontal", command=self.tree.xview)
-        self.tree.configure(yscroll=v_scrollbar.set, xscrollcommand=h_scrollbar.set)
+        # Modern CTk Scrollbars
+        v_scrollbar = ctk.CTkScrollbar(self.tree_frame, orientation="vertical", command=self.tree.yview)
+        h_scrollbar = ctk.CTkScrollbar(self.tree_frame, orientation="horizontal", command=self.tree.xview)
+        
+        self.tree.configure(yscrollcommand=v_scrollbar.set, xscrollcommand=h_scrollbar.set)
         
         # Grid Tree & Scrollbars
         self.tree.grid(row=0, column=0, sticky="nsew")
-        v_scrollbar.grid(row=0, column=1, sticky="ns")
-        h_scrollbar.grid(row=1, column=0, sticky="ew")
+        v_scrollbar.grid(row=0, column=1, sticky="ns", padx=(5, 0))
+        h_scrollbar.grid(row=1, column=0, sticky="ew", pady=(5, 0))
 
     def set_sort(self, column):
         if self.sort_column == column:
