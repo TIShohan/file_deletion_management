@@ -5,7 +5,7 @@ Convert a prototype file management script into a premium, modern Windows applic
 
 ## User Flow
 1. **Launch**: Open the app via standalone `.exe`.
-2. **Dashboard**: View system health, total analyzed space, and "Toxic Folders."
+2. **Dashboard**: View system stats, total analyzed space, and the **Storage Composition** chart.
 3. **Deep Scan**: Select a directory and perform a tiered hash scan.
 4. **Review**: Search, filter, and group identical files.
 5. **Action**: "Dry Run" to simulate savings or "Move to Recycle Bin" for safe cleanup.
@@ -15,8 +15,8 @@ Convert a prototype file management script into a premium, modern Windows applic
    - Multi-threaded performance with real-time progress.
    - **Course-Safe Duplication**: Advanced grouping (Content + Name + Folder) to prevent accidental deletion of identical files in different modules.
 2. **Disk Analytics**:
-   - "Toxic Folders" dashboard to see which directories consume the most RAM.
-   - Total analyzed metric (MB/GB).
+   - **Storage Composition** dashboard to see which file types (Videos, Images, etc) consume the most space.
+   - Total analyzed metric (MB/GB/Files).
 3. **Advanced Filtering**:
    - Instant search by filename, size threshold, and file age.
 4. **Secure Management**:

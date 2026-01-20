@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# PyInstaller / Build
+build/
+dist/
+*.spec
+
+# Database & Logs
+*.db
+*.log
+
+# IDEs
+.vscode/
+.idea/
+.gemini/
