@@ -1,6 +1,6 @@
 # CleanSweep 🚀 (Pro File Deletion Management)
 
-# 📥 [Download CleanSweep for Windows (Portable .exe)](PASTE_YOUR_RELEASE_LINK_HERE)
+# 📥 [Download CleanSweep for Windows (Portable .exe)](https://github.com/TIShohan/file_deletion_management/releases/download/v1.0.4/CleanSweep.exe)
 *No installation needed. Just download and run.*
 
 ---
