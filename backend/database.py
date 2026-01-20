@@ -72,33 +72,32 @@ class DatabaseManager:
             conn.execute(f"UPDATE files SET {column} = ? WHERE path = ?", (hash_val, path))
             conn.commit()
 
-    def mark_duplicates(self, mode="content"):
-        """Identifies duplicates based on mode: 'content' (MD5) or 'name' (Filename)"""
+    def mark_duplicates(self):
+        """Course-Safe Hashing: Content + Filename + Folder must ALL match to be a duplicate"""
         with self.get_connection() as conn:
             # First reset
             conn.execute("UPDATE files SET is_duplicate = 0")
             
-            if mode == "content":
-                # Mark duplicates based on full hash
-                conn.execute('''
-                    UPDATE files SET is_duplicate = 1 
-                    WHERE hash_full IN (
-                        SELECT hash_full FROM files 
-                        WHERE hash_full IS NOT NULL 
-                        GROUP BY hash_full 
-                        HAVING COUNT(*) > 1
-                    )
-                ''')
-            else:
-                # Mark duplicates based on filename
-                conn.execute('''
-                    UPDATE files SET is_duplicate = 1 
-                    WHERE filename IN (
-                        SELECT filename FROM files 
-                        GROUP BY filename 
-                        HAVING COUNT(*) > 1
-                    )
-                ''')
+            # We target files that are identical in Content, Name AND belong to a folder with the same name
+            # This prevents files in different course modules from being flagged.
+            conn.execute('''
+                WITH DuplicateGroups AS (
+                    SELECT hash_full, filename, folder,
+                           DENSE_RANK() OVER (ORDER BY hash_full, filename, folder) as group_id
+                    FROM files 
+                    WHERE hash_full IS NOT NULL 
+                    GROUP BY hash_full, filename, folder
+                    HAVING COUNT(*) > 1
+                )
+                UPDATE files 
+                SET is_duplicate = (
+                    SELECT group_id FROM DuplicateGroups 
+                    WHERE DuplicateGroups.hash_full = files.hash_full 
+                    AND DuplicateGroups.filename = files.filename
+                    AND DuplicateGroups.folder = files.folder
+                )
+                WHERE (hash_full, filename, folder) IN (SELECT hash_full, filename, folder FROM DuplicateGroups)
+            ''')
             conn.commit()
 
     def get_dashboard_stats(self):

@@ -45,11 +45,12 @@ class ScanWorker(threading.Thread):
     def _process_hashes(self, scanner):
         """Tiered Hashing Implementation"""
         with self.db.get_connection() as conn:
-            # Only hash files that share the exact same size
+            # PHASE A: Candidate selection (Strict Triple Check)
+            # Only hash files that share Size + Name + Parent Folder
             query = """
                 SELECT path FROM files 
-                WHERE size_bytes IN (
-                    SELECT size_bytes FROM files GROUP BY size_bytes HAVING COUNT(*) > 1
+                WHERE (filename, folder, size_bytes) IN (
+                    SELECT filename, folder, size_bytes FROM files GROUP BY filename, folder, size_bytes HAVING COUNT(*) > 1
                 )
             """
             paths_to_hash = [row['path'] for row in conn.execute(query).fetchall()]
@@ -87,8 +88,8 @@ class ScanWorker(threading.Thread):
             if i % 10 == 0:
                 self._update_progress(i, f"Full hashing confirmed matches ({i}/{total_full})...")
 
-        # Mark duplicates in DB (default to content for initial scan)
-        self.db.mark_duplicates(mode="content")
+        # Mark duplicates in DB using Standard Content Hashing
+        self.db.mark_duplicates()
 
     def stop(self):
         self.stop_event.set()

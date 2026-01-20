@@ -35,6 +35,9 @@ class ScannerView(ctk.CTkFrame):
         self.scan_btn = ctk.CTkButton(self.top_frame, text="Start Deep Scan", fg_color="#2ecc71", hover_color="#27ae60", width=140, height=40, font=ctk.CTkFont(weight="bold"), command=self.start_scan)
         self.scan_btn.pack(side="left", padx=5)
 
+        self.stop_btn = ctk.CTkButton(self.top_frame, text="Cancel", fg_color="#e74c3c", hover_color="#c0392b", width=80, height=40, font=ctk.CTkFont(weight="bold"), state="disabled", command=self.stop_scan)
+        self.stop_btn.pack(side="left", padx=5)
+
         # --- Middle Section: Filters ---
         self.filter_container = ctk.CTkFrame(self)
         self.filter_container.grid(row=2, column=0, sticky="ew", padx=20, pady=10)
@@ -50,11 +53,6 @@ class ScannerView(ctk.CTkFrame):
         self.min_age_entry = ctk.CTkEntry(self.filter_container, placeholder_text="Min Days", width=80)
         self.min_age_entry.pack(side="left", padx=5, pady=15)
         self.min_age_entry.bind("<KeyRelease>", lambda e: self.load_results())
-
-        self.dup_mode_var = ctk.StringVar(value="Content")
-        self.dup_mode_seg = ctk.CTkSegmentedButton(self.filter_container, values=["Content", "Name"], 
-                                                     variable=self.dup_mode_var, command=self.change_duplicate_mode)
-        self.dup_mode_seg.pack(side="right", padx=15, pady=15)
 
         self.duplicate_var = ctk.BooleanVar(value=False)
         self.duplicate_switch = ctk.CTkSwitch(self.filter_container, text="Duplicates Only", variable=self.duplicate_var, command=self.load_results)
@@ -116,12 +114,12 @@ class ScannerView(ctk.CTkFrame):
         self.tree.heading("path", text="FILE PATH", command=lambda: self.set_sort("path"))
         self.tree.heading("size", text="SIZE ↓", command=lambda: self.set_sort("size_bytes"))
         self.tree.heading("type", text="TYPE", command=lambda: self.set_sort("extension"))
-        self.tree.heading("is_dup", text="DUPLICATE", command=lambda: self.set_sort("is_duplicate"))
+        self.tree.heading("is_dup", text="GROUP", command=lambda: self.set_sort("is_duplicate"))
         
-        self.tree.column("path", width=600, minwidth=200)
-        self.tree.column("size", width=120, anchor="e", minwidth=100)
-        self.tree.column("type", width=100, anchor="center", minwidth=80)
-        self.tree.column("is_dup", width=120, anchor="center", minwidth=100)
+        self.tree.column("path", width=1200, minwidth=400, stretch=True)
+        self.tree.column("size", width=120, anchor="e", stretch=False)
+        self.tree.column("type", width=100, anchor="center", stretch=False)
+        self.tree.column("is_dup", width=100, anchor="center", stretch=False)
 
         self.tree.tag_configure("duplicate", background="#3d1414", foreground="#ffaaaa")
 
@@ -146,6 +144,10 @@ class ScannerView(ctk.CTkFrame):
         # Update heading visual
         for col in ["path", "size", "type", "is_dup"]:
             text = self.tree.heading(col)["text"].replace(" ↓", "").replace(" ↑", "")
+            heading_id = col
+            if col == "is_dup":
+                text = "GROUP"
+            
             if col == column or (col == "size" and column == "size_bytes") or (col == "type" and column == "extension") or (col == "is_dup" and column == "is_duplicate"):
                 text += " ↓" if self.sort_desc else " ↑"
             self.tree.heading(col, text=text)
@@ -221,6 +223,12 @@ class ScannerView(ctk.CTkFrame):
         if errors:
             messagebox.showerror("Errors Occurred", "\n".join(errors[:3]))
 
+    def stop_scan(self):
+        if self.worker:
+            self.worker.stop()
+            self.stop_btn.configure(state="disabled", text="Stopping...")
+            self.status_label.configure(text="Cancelling scan...")
+
     def start_scan(self):
         root_path = self.path_entry.get()
         if not root_path:
@@ -228,6 +236,7 @@ class ScannerView(ctk.CTkFrame):
             return
 
         self.scan_btn.configure(state="disabled", text="Scanning...")
+        self.stop_btn.configure(state="normal", text="Cancel")
         self.progress_bar.configure(mode="indeterminate")
         self.progress_bar.start()
         self.status_label.configure(text="Scanning file system...")
@@ -257,15 +266,11 @@ class ScannerView(ctk.CTkFrame):
 
     def _scan_finished(self, message):
         self.scan_btn.configure(state="normal", text="Start Deep Scan")
+        self.stop_btn.configure(state="disabled", text="Cancel")
         self.progress_bar.stop()
         self.progress_bar.configure(mode="determinate")
         self.progress_bar.set(1)
         self.status_label.configure(text=message)
-        self.load_results()
-
-    def change_duplicate_mode(self, mode):
-        if self.db:
-            self.db.mark_duplicates(mode=mode.lower())
         self.load_results()
 
     def load_results(self):
@@ -283,7 +288,7 @@ class ScannerView(ctk.CTkFrame):
         try:
             with self.db.get_connection() as conn:
                 params = [name_filter, min_size, min_age]
-                dup_clause = "AND is_duplicate = 1" if self.duplicate_var.get() else ""
+                dup_clause = "AND is_duplicate > 0" if self.duplicate_var.get() else ""
                 
                 order_dir = "DESC" if self.sort_desc else "ASC"
                 query = f"""
@@ -300,9 +305,9 @@ class ScannerView(ctk.CTkFrame):
             for row in rows:
                 size_mb = f"{row['size_bytes'] / (1024*1024):.2f} MB"
                 ext = row['extension'].upper() if row['extension'] else "FILE"
-                is_dup = "MATCH" if row['is_duplicate'] else "-"
-                tag = ("duplicate",) if row['is_duplicate'] else ()
-                self.tree.insert("", "end", values=(row['path'], size_mb, ext, is_dup), tags=tag)
+                is_dup_val = f"Group {row['is_duplicate']}" if row['is_duplicate'] > 0 else "-"
+                tag = ("duplicate",) if row['is_duplicate'] > 0 else ()
+                self.tree.insert("", "end", values=(row['path'], size_mb, ext, is_dup_val), tags=tag)
                 
             self.status_label.configure(text=f"Loaded {len(rows)} matching items.")
         except Exception as e:

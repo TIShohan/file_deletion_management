@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from tkinter import messagebox
 
 class DashboardView(ctk.CTkFrame):
     def __init__(self, master, db=None, **kwargs):
@@ -6,7 +7,7 @@ class DashboardView(ctk.CTkFrame):
         self.db = db
 
         self.grid_columnconfigure(0, weight=1)
-        self.grid_rowconfigure(2, weight=1)
+        self.grid_rowconfigure(3, weight=1)
 
         # Welcome Banner
         self.banner = ctk.CTkFrame(self, fg_color=("#3B8ED0", "#1f538d"), corner_radius=15, height=130)
@@ -29,17 +30,36 @@ class DashboardView(ctk.CTkFrame):
         self.create_stat_card("Total Analyzed", "0 MB", 1, "total_size", "#e67e22")
         self.create_stat_card("Duplicates", "0", 2, "duplicates", "#e74c3c")
 
+        # Action buttons frame
+        self.actions_frame = ctk.CTkFrame(self, fg_color="transparent")
+        self.actions_frame.grid(row=2, column=0, sticky="ew", pady=(10, 0), padx=30)
+        self.actions_frame.grid_columnconfigure((0, 1), weight=1)
+
         # Start Scan Shortcut
         self.scan_shortcut_btn = ctk.CTkButton(
-            self, 
+            self.actions_frame, 
             text="🚀 START NEW SCAN", 
             font=ctk.CTkFont(size=14, weight="bold"),
             height=45,
+            width=200,
             fg_color="#3B8ED0",
             hover_color="#1f538d",
-            command=lambda: master.master.show_scanner() # Navigate to scanner
+            command=lambda: master.master.show_scanner() 
         )
-        self.scan_shortcut_btn.grid(row=2, column=0, pady=(20, 0), padx=30)
+        self.scan_shortcut_btn.grid(row=0, column=0, padx=10)
+
+        # Clear Metrics Button
+        self.clear_metrics_btn = ctk.CTkButton(
+            self.actions_frame,
+            text="🧹 CLEAR ALL METRICS",
+            font=ctk.CTkFont(size=14, weight="bold"),
+            height=45,
+            width=200,
+            fg_color="#e74c3c",
+            hover_color="#c0392b",
+            command=self.clear_metrics_action
+        )
+        self.clear_metrics_btn.grid(row=0, column=1, padx=10)
 
         # Top Folders Section
         self.folders_frame = ctk.CTkFrame(self, corner_radius=15, border_width=1, border_color="gray30")
@@ -95,3 +115,10 @@ class DashboardView(ctk.CTkFrame):
             size_lbl = ctk.CTkLabel(item, text=f"{size_mb/1024:.2f} GB" if size_mb > 1024 else f"{size_mb:.2f} MB", 
                                     font=ctk.CTkFont(size=12, weight="bold"), text_color="#3B8ED0")
             size_lbl.pack(side="right", padx=15)
+
+    def clear_metrics_action(self):
+        """Resets the dashboard by clearing the database"""
+        if messagebox.askyesno("Confirm Reset", "Are you sure you want to clear all scanned metrics?"):
+            self.db.clear_database()
+            self.refresh_stats()
+            messagebox.showinfo("Success", "Dashboard metrics cleared.")
