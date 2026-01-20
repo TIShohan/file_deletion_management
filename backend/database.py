@@ -120,6 +120,18 @@ class DatabaseManager:
                 "duplicates_count": duplicates_count
             }
 
+    def get_top_folders(self, limit=5):
+        """Returns the top X folders by total size"""
+        with self.get_connection() as conn:
+            query = """
+                SELECT folder, SUM(size_mb) as total_size 
+                FROM files 
+                GROUP BY folder 
+                ORDER BY total_size DESC 
+                LIMIT ?
+            """
+            return conn.execute(query, (limit,)).fetchall()
+
     def get_setting(self, key, default=None):
         with self.get_connection() as conn:
             res = conn.execute("SELECT value FROM settings WHERE key = ?", (key,)).fetchone()

@@ -46,9 +46,9 @@ class App(ctk.CTk):
         self.version_label.pack()
 
         # Navigation Buttons
-        self.dashboard_button = self.create_nav_button("Dashboard", 1, self.show_dashboard)
-        self.scanner_button = self.create_nav_button("Deep Scanner", 2, self.show_scanner)
-        self.settings_button = self.create_nav_button("Settings", 3, self.show_settings)
+        self.dashboard_button = self.create_nav_button("📊  Dashboard", 1, self.show_dashboard)
+        self.scanner_button = self.create_nav_button("🔍  Deep Scanner", 2, self.show_scanner)
+        self.settings_button = self.create_nav_button("⚙️   Settings", 3, self.show_settings)
         
         # Appearance Mode Selector at bottom
         self.appearance_mode_menu = ctk.CTkOptionMenu(
