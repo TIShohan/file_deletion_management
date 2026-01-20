@@ -21,6 +21,14 @@ class App(ctk.CTk):
         self.geometry("1200x800")
         self.minsize(1000, 700)
         
+        # Set Window Icon
+        icon_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "icon.ico")
+        if os.path.exists(icon_path):
+            try:
+                self.iconbitmap(icon_path)
+            except:
+                pass # Silently fail if icon fails to load (e.g. on non-windows if run during development)
+        
         # Grid Layout 
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)

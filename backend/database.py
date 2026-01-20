@@ -3,8 +3,23 @@ import os
 from contextlib import contextmanager
 
 class DatabaseManager:
-    def __init__(self, db_path="file_data.db"):
-        self.db_path = db_path
+    def __init__(self, db_name="file_data.db"):
+        # Relocate DB to AppData/Local for industry standards
+        self.app_data_dir = os.path.join(os.environ.get('LOCALAPPDATA', os.path.expanduser('~')), "CleanSweep")
+        if not os.path.exists(self.app_data_dir):
+            os.makedirs(self.app_data_dir)
+            
+        self.db_path = os.path.join(self.app_data_dir, db_name)
+        
+        # Industry Standard Safe-List (Exclusions)
+        self.safe_list = [
+            "C:\\Windows",
+            "C:\\Program Files",
+            "C:\\Program Files (x86)",
+            "C:\\$Recycle.Bin",
+            "C:\\System Volume Information"
+        ]
+        
         self._initialize_db()
 
     @contextmanager

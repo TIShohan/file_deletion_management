@@ -3,11 +3,12 @@ from .scanner import FileScanner
 from .database import DatabaseManager
 
 class ScanWorker(threading.Thread):
-    def __init__(self, root_path, db_manager: DatabaseManager, skip_extensions=None, progress_callback=None, completion_callback=None):
+    def __init__(self, root_path, db_manager: DatabaseManager, skip_extensions=None, skip_directories=None, progress_callback=None, completion_callback=None):
         super().__init__()
         self.root_path = root_path
         self.db = db_manager
         self.skip_extensions = skip_extensions
+        self.skip_directories = skip_directories
         self.progress_callback = progress_callback
         self.completion_callback = completion_callback
         self.stop_event = threading.Event()
@@ -15,13 +16,16 @@ class ScanWorker(threading.Thread):
     def run(self):
         try:
             self._update_progress(0, "Initializing scan...")
-            scanner = FileScanner(self.root_path, skip_extensions=self.skip_extensions)
+            scanner = FileScanner(self.root_path, skip_extensions=self.skip_extensions, skip_directories=self.skip_directories)
             
             # 1. Scanning
             self._update_progress(0, "Scanning files...")
-            files = scanner.scan(progress_callback=self._update_progress)
+            files = scanner.scan(progress_callback=self._update_progress, stop_event=self.stop_event)
             
-            if self.stop_event.is_set(): return
+            if self.stop_event.is_set(): 
+                if self.completion_callback:
+                    self.completion_callback("Scan cancelled.")
+                return
 
             # 2. Database Insertion
             self._update_progress(len(files), "Saving to database...")
@@ -43,10 +47,11 @@ class ScanWorker(threading.Thread):
             self.progress_callback(count, message)
 
     def _process_hashes(self, scanner):
-        """Tiered Hashing Implementation"""
+        """Ultra-Fast Parallel Hashing Implementation"""
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        
         with self.db.get_connection() as conn:
             # PHASE A: Candidate selection (Strict Triple Check)
-            # Only hash files that share Size + Name + Parent Folder
             query = """
                 SELECT path FROM files 
                 WHERE (filename, folder, size_bytes) IN (
@@ -56,18 +61,33 @@ class ScanWorker(threading.Thread):
             paths_to_hash = [row['path'] for row in conn.execute(query).fetchall()]
 
         total_to_hash = len(paths_to_hash)
-        for i, path in enumerate(paths_to_hash):
-            if self.stop_event.is_set(): break
-            
-            # Step A: Quick Hash
-            q_hash = scanner.get_quick_hash(path)
-            if q_hash:
-                self.db.update_hash(path, q_hash, quick=True)
-            
-            if i % 10 == 0:
-                self._update_progress(i, f"Quick hashing duplicates ({i}/{total_to_hash})...")
+        if total_to_hash == 0:
+            self.db.mark_duplicates()
+            return
 
-        # Step B: Full Hash only if Quick Hashes match
+        # Parallel Quick Hashing
+        self._update_progress(0, f"Quick hashing {total_to_hash} candidates...")
+        with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+            futures = {executor.submit(scanner.get_quick_hash, p): p for p in paths_to_hash}
+            try:
+                for i, future in enumerate(as_completed(futures)):
+                    if self.stop_event.is_set():
+                        executor.shutdown(wait=False, cancel_futures=True)
+                        break
+                    
+                    path = futures[future]
+                    q_hash = future.result()
+                    if q_hash:
+                        self.db.update_hash(path, q_hash, quick=True)
+                    if i % 20 == 0:
+                        self._update_progress(i, f"Analyzing candidates ({i}/{total_to_hash})...")
+            except Exception:
+                executor.shutdown(wait=False, cancel_futures=True)
+                raise
+
+        if self.stop_event.is_set(): return
+
+        # PHASE B: Full Hash only if Quick Hashes match
         with self.db.get_connection() as conn:
             query = """
                 SELECT path FROM files 
@@ -78,17 +98,30 @@ class ScanWorker(threading.Thread):
             paths_for_full_hash = [row['path'] for row in conn.execute(query).fetchall()]
 
         total_full = len(paths_for_full_hash)
-        for i, path in enumerate(paths_for_full_hash):
-            if self.stop_event.is_set(): break
-            
-            f_hash = scanner.get_full_hash(path)
-            if f_hash:
-                self.db.update_hash(path, f_hash, quick=False)
-            
-            if i % 10 == 0:
-                self._update_progress(i, f"Full hashing confirmed matches ({i}/{total_full})...")
+        if total_full > 0:
+            self._update_progress(0, f"Deep analysis of {total_full} files...")
+            with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+                futures = {executor.submit(scanner.get_full_hash, p): p for p in paths_for_full_hash}
+                try:
+                    for i, future in enumerate(as_completed(futures)):
+                        if self.stop_event.is_set():
+                            executor.shutdown(wait=False, cancel_futures=True)
+                            break
+                            
+                        path = futures[future]
+                        f_hash = future.result()
+                        if f_hash:
+                            self.db.update_hash(path, f_hash, quick=False)
+                        if i % 5 == 0:
+                            self._update_progress(i, f"Verifying identical items ({i}/{total_full})...")
+                except Exception:
+                    executor.shutdown(wait=False, cancel_futures=True)
+                    raise
 
-        # Mark duplicates in DB using Standard Content Hashing
+        if self.stop_event.is_set(): return
+
+        # Final Grouping
+        self._update_progress(total_to_hash, "Finalizing duplicate groups...")
         self.db.mark_duplicates()
 
     def stop(self):

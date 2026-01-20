@@ -1,42 +1,34 @@
-# Project Brief: File Deletion Management Tool
+# Project Brief: CleanSweep (File Deletion Management)
 
 ## Objective
-Convert the prototype file management script into a professional, modern Windows application. The goal is to provide a seamless user experience from installation to daily use, helping users identify and clean up large files and duplicates effortlessly.
+Convert a prototype file management script into a premium, modern Windows application. The goal is to help users identify and clean up large files and duplicates with 100% safety and a beautiful user interface.
 
 ## User Flow
-1. **Installation**: User runs a setup file that installs the application.
-2. **Launch**: User opens the app via a desktop or start menu shortcut (standalone `.exe`).
-3. **Configuration**: User selects the directory path they wish to scan through a modern folder picker.
-4. **Operation**: User reviews scan results, applies filters, and performs "Dry Runs" or deletions as needed.
+1. **Launch**: Open the app via standalone `.exe`.
+2. **Dashboard**: View system health, total analyzed space, and "Toxic Folders."
+3. **Deep Scan**: Select a directory and perform a tiered hash scan.
+4. **Review**: Search, filter, and group identical files.
+5. **Action**: "Dry Run" to simulate savings or "Move to Recycle Bin" for safe cleanup.
 
 ## Core Features
-1. **Interactive File Scanning**:
-   - Dynamic path selection (User chooses which drive or folder to scan).
-   - Deep scan with multi-threaded performance.
-   - Real-time progress tracking.
+1. **Interactive Scanner**:
+   - Multi-threaded performance with real-time progress.
+   - **Course-Safe Duplication**: Advanced grouping (Content + Name + Folder) to prevent accidental deletion of identical files in different modules.
 2. **Disk Analytics**:
-   - Display top largest folders within the selected path.
-   - Total scanned file count and total storage size.
+   - "Toxic Folders" dashboard to see which directories consume the most RAM.
+   - Total analyzed metric (MB/GB).
 3. **Advanced Filtering**:
-   - Search by filename or extension.
-   - Filter by minimum file size (MB).
-   - Filter by file age (e.g., older than 30, 90, 365 days).
-   - Filter by specific file extensions.
-4. **Duplicate Detection**:
-   - MD5 hash-based duplicate finding.
-5. **Secure Management**:
-   - "Select All" and manual selection for deletion.
-   - Dry Run mode to preview actions.
-   - Safe deletion using the Windows Recycle Bin.
-   - Multi-step confirmation for actual deletion.
+   - Instant search by filename, size threshold, and file age.
+4. **Secure Management**:
+   - "Select All" / Deselect logic.
+   - "Dry Run" simulator.
+   - Safe deletion using Windows Recycle Bin (`send2trash`).
 
 ## Technical Goals & Requirements
-- **GUI Framework**: **CustomTkinter** for a robust, high-performance, and modern Windows-native user interface.
-- **Scanning Engine**: Optimized with **Tiered Hashing** (Size check -> Quick Hash -> Full Hash) for maximum speed.
-- **Data Persistence**: **SQLite** backend for efficient handling of large datasets (scanning millions of files without RAM bloat).
-- **Concurrency**: Multi-threaded architecture to keep the UI responsive during deep scans.
-- **Packaging**: Standalone `.exe` via PyInstaller, bundled with a professional **Inno Setup** installer.
-- **Aesthetics**: Modern "Dark Mode" design with custom-styled widgets and smooth interactions.
+- **GUI Framework**: **CustomTkinter** for a professional Windows-native look.
+- **Scanning Engine**: **Tiered Hashing** (Size -> Quick Hash -> Full MD5).
+- **Data Persistence**: **SQLite** backend for light-speed querying of millions of files.
+- **Packaging**: Standalone `.exe` via PyInstaller + Inno Setup.
 
 ## Target Audience
-Users looking for a simple yet powerful tool to manage local storage, find duplicates, and clean up junk files.
+Windows users needing a powerful yet safe tool to reclaim disk space from large files and redundant content.

@@ -4,52 +4,68 @@ from datetime import datetime
 from pathlib import Path
 
 class FileScanner:
-    def __init__(self, root_path, skip_extensions=None):
+    def __init__(self, root_path, skip_extensions=None, skip_directories=None):
         self.root_path = root_path
         self.skip_extensions = skip_extensions or {'.sys', '.dll', '.exe', '.ini', '.dat'}
+        self.skip_directories = skip_directories or []
 
-    def scan(self, progress_callback=None):
+    def scan(self, progress_callback=None, stop_event=None):
         """
-        Walks through the directory and yields file metadata.
+        Fast scanning using os.scandir with cancellation support.
         """
         files_found = []
         count = 0
         
-        for root, dirs, filenames in os.walk(self.root_path):
-            # Skip hidden directories if needed (optional)
-            for f in filenames:
-                try:
-                    path = os.path.normpath(os.path.join(root, f))
-                    ext = Path(f).suffix.lower()
-                    
-                    if ext in self.skip_extensions:
-                        continue
-                        
-                    stats = os.stat(path)
-                    size = stats.st_size
-                    mtime = stats.st_mtime
-                    mod_date = datetime.fromtimestamp(mtime)
-                    age_days = (datetime.now() - mod_date).days
-                    
-                    file_info = (
-                        f,
-                        path,
-                        root,
-                        ext,
-                        size,
-                        round(size / (1024 * 1024), 2),
-                        mod_date.strftime("%Y-%m-%d %H:%M"),
-                        age_days
-                    )
-                    files_found.append(file_info)
-                    count += 1
-                    
-                    if count % 100 == 0 and progress_callback:
-                        progress_callback(count, f"Last scanned: {f}")
-                        
-                except (PermissionError, OSError):
-                    continue
-                    
+        stack = [self.root_path]
+        
+        while stack:
+            # Check if user requested cancellation
+            if stop_event and stop_event.is_set():
+                return files_found
+                
+            current_dir = stack.pop()
+            try:
+                with os.scandir(current_dir) as entries:
+                    for entry in entries:
+                        try:
+                            if entry.is_dir(follow_symlinks=False):
+                                # Skip system-protected directories (SaaS standard)
+                                if any(entry.path.startswith(safe) for safe in self.skip_directories):
+                                    continue
+                                stack.append(entry.path)
+                            elif entry.is_file(follow_symlinks=False):
+                                path = os.path.normpath(entry.path)
+                                ext = os.path.splitext(entry.name)[1].lower()
+                                
+                                if ext in self.skip_extensions:
+                                    continue
+                                    
+                                stats = entry.stat()
+                                size = stats.st_size
+                                mtime = stats.st_mtime
+                                mod_date = datetime.fromtimestamp(mtime)
+                                age_days = (datetime.now() - mod_date).days
+                                
+                                file_info = (
+                                    entry.name,
+                                    path,
+                                    current_dir,
+                                    ext,
+                                    size,
+                                    round(size / (1024 * 1024), 2),
+                                    mod_date.strftime("%Y-%m-%d %H:%M"),
+                                    age_days
+                                )
+                                files_found.append(file_info)
+                                count += 1
+                                
+                                if count % 100 == 0 and progress_callback:
+                                    progress_callback(count, f"Scanned: {entry.name}")
+                        except (PermissionError, OSError):
+                            continue
+            except (PermissionError, OSError):
+                continue
+                
         return files_found
 
     @staticmethod

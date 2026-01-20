@@ -253,6 +253,7 @@ class ScannerView(ctk.CTkFrame):
             root_path, 
             self.db, 
             skip_extensions=set(skip_ext_list), 
+            skip_directories=self.db.safe_list,
             progress_callback=self.on_progress, 
             completion_callback=self.on_complete
         )

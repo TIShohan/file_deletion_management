@@ -16,7 +16,7 @@ class DashboardView(ctk.CTkFrame):
         self.banner.grid_columnconfigure(0, weight=1)
         self.banner.grid_rowconfigure(0, weight=1)
         
-        self.welcome_label = ctk.CTkLabel(self.banner, text="System Health & Cleanup Overview", font=ctk.CTkFont(size=26, weight="bold"), text_color="white")
+        self.welcome_label = ctk.CTkLabel(self.banner, text="CleanSweep Analytics Dashboard", font=ctk.CTkFont(size=26, weight="bold"), text_color="white")
         self.welcome_label.grid(row=0, column=0, padx=20, pady=20)
 
         # Stats Grid
@@ -26,9 +26,9 @@ class DashboardView(ctk.CTkFrame):
         self.stat_vars = {}
         self.stat_cards = {}
         
-        self.create_stat_card("Total Files", "0", 0, "total_files", "#2ecc71")
-        self.create_stat_card("Total Analyzed", "0 MB", 1, "total_size", "#e67e22")
-        self.create_stat_card("Duplicates", "0", 2, "duplicates", "#e74c3c")
+        self.create_stat_card("Analyzed Files", "0", 0, "total_files", "#2ecc71")
+        self.create_stat_card("Total Scan Size", "0 MB", 1, "total_size", "#e67e22")
+        self.create_stat_card("Duplicate Items", "0", 2, "duplicates", "#e74c3c")
 
         # Action buttons frame
         self.actions_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -61,16 +61,16 @@ class DashboardView(ctk.CTkFrame):
         )
         self.clear_metrics_btn.grid(row=0, column=1, padx=10)
 
-        # Top Folders Section
-        self.folders_frame = ctk.CTkFrame(self, corner_radius=15, border_width=1, border_color="gray30")
-        self.folders_frame.grid(row=3, column=0, sticky="nsew", padx=30, pady=(20, 30))
-        self.folders_frame.grid_columnconfigure(0, weight=1)
+        # Visual Analytics Section (Professional Standards)
+        self.analytics_frame = ctk.CTkFrame(self, corner_radius=15, border_width=1, border_color="gray30")
+        self.analytics_frame.grid(row=3, column=0, sticky="nsew", padx=30, pady=(20, 30))
+        self.analytics_frame.grid_columnconfigure(0, weight=1)
 
-        self.folder_title = ctk.CTkLabel(self.folders_frame, text="📁 TOXIC FOLDERS (Largest Space Consumers)", font=ctk.CTkFont(size=14, weight="bold"), text_color="gray60")
-        self.folder_title.pack(anchor="w", padx=25, pady=(20, 10))
+        self.chart_title = ctk.CTkLabel(self.analytics_frame, text="📊 STORAGE COMPOSITION (By File Type)", font=ctk.CTkFont(size=14, weight="bold"), text_color="gray60")
+        self.chart_title.pack(anchor="w", padx=25, pady=(20, 10))
         
-        self.folder_list_container = ctk.CTkFrame(self.folders_frame, fg_color="transparent")
-        self.folder_list_container.pack(fill="both", expand=True, padx=25, pady=(0, 20))
+        self.chart_container = ctk.CTkFrame(self.analytics_frame, fg_color="transparent")
+        self.chart_container.pack(fill="both", expand=True, padx=25, pady=(0, 20))
         
         self.refresh_stats()
 
@@ -97,24 +97,45 @@ class DashboardView(ctk.CTkFrame):
         self.stat_vars["total_size"].set(f"{size/1024:.2f} GB" if size > 1024 else f"{size:.2f} MB")
         self.stat_vars["duplicates"].set(f"{stats['duplicates_count']:,}")
 
-        # Refresh Folder List
-        for widget in self.folder_list_container.winfo_children():
+        # Refresh Visual Analytics (Simple bar indicators for type distribution)
+        for widget in self.chart_container.winfo_children():
             widget.destroy()
             
-        top_folders = self.db.get_top_folders(5)
-        if not top_folders:
-            ctk.CTkLabel(self.folder_list_container, text="No scan data available yet.", text_color="gray50").pack(pady=20)
-        
-        for folder, size_mb in top_folders:
-            item = ctk.CTkFrame(self.folder_list_container, fg_color=("gray95", "gray25"), corner_radius=8)
-            item.pack(fill="x", pady=4)
+        type_distribution = self._get_type_distribution()
+        if not type_distribution:
+            ctk.CTkLabel(self.chart_container, text="No scan data available for analysis.", text_color="gray50").pack(pady=40)
+            return
+
+        total_size = sum(size for _, size in type_distribution)
+        for ext, size_mb in type_distribution:
+            percentage = (size_mb / total_size) if total_size > 0 else 0
             
-            name_lbl = ctk.CTkLabel(item, text=folder, font=ctk.CTkFont(size=12), anchor="w")
-            name_lbl.pack(side="left", padx=15, pady=8, fill="x", expand=True)
+            row = ctk.CTkFrame(self.chart_container, fg_color="transparent")
+            row.pack(fill="x", pady=5)
             
-            size_lbl = ctk.CTkLabel(item, text=f"{size_mb/1024:.2f} GB" if size_mb > 1024 else f"{size_mb:.2f} MB", 
-                                    font=ctk.CTkFont(size=12, weight="bold"), text_color="#3B8ED0")
-            size_lbl.pack(side="right", padx=15)
+            label_box = ctk.CTkFrame(row, fg_color="transparent", width=120)
+            label_box.pack(side="left", padx=(0, 10))
+            label_box.pack_propagate(False)
+            
+            ctk.CTkLabel(label_box, text=ext.upper() or "OTHER", font=ctk.CTkFont(size=11, weight="bold")).pack(side="left")
+            
+            progress = ctk.CTkProgressBar(row, height=12, fg_color="gray20", progress_color="#3B8ED0")
+            progress.pack(side="left", fill="x", expand=True, padx=10)
+            progress.set(percentage)
+            
+            ctk.CTkLabel(row, text=f"{percentage*100:.1f}%", font=ctk.CTkFont(size=11), width=50).pack(side="right")
+
+    def _get_type_distribution(self):
+        """Fetches storage distribution by file extension"""
+        with self.db.get_connection() as conn:
+            query = """
+                SELECT extension, SUM(size_mb) as total_size 
+                FROM files 
+                GROUP BY extension 
+                ORDER BY total_size DESC 
+                LIMIT 6
+            """
+            return conn.execute(query).fetchall()
 
     def clear_metrics_action(self):
         """Resets the dashboard by clearing the database"""

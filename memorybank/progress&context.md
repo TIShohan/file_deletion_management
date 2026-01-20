@@ -1,37 +1,38 @@
 # Progress & Context: File Deletion Management Tool
 
 ## Current Status
-- **Phase**: Done (Migration to CustomTkinter)
-- **Completion**: 100%
-- **Last Updated**: 2026-01-18
+- **Phase**: Final Stability & Packaging
+- **Completion**: 99%
+- **Last Updated**: 2026-01-20
 
 ## Project Overview
-This project aims to convert a Python prototype (`File Size Rearranging.py`) which uses Jupyter Widgets for file management, into a professional, standalone Windows application with a modern GUI. The app allows users to scan directories, identify large files/duplicates, and delete them safely via the Recycle Bin.
+This project transforms a Python prototype into a professional, standalone Windows application (CleanSweep). The app utilizes CustomTkinter for a modern GUI, SQLite for fast data processing, and Tiered Hashing for precise duplicate detection.
 
 ## Key Context for New Agents
-1.  **Input Prototype**: `File Size Rearranging.py` contains the original logic.
-2.  **Tech Stack Decision**:
-    *   **GUI**: **Flet** (Modern Flutter-based UI).
-    *   **Backend**: Python with **SQLite** for handling large file lists.
-    *   **Optimization**: **Tiered Hashing** (Size -> Quick MD5 -> Full MD5).
-3.  **User Requirements**:
-    *   Standalone `.exe` with an Inno Setup installer.
-    *   Dynamic path selection and high-performance scanning.
-    *   Premium aesthetics (Dark Mode, Animations).
-4.  **Project Documentation**:
-    *   `projectbrief.md`: Vision and Technical Goals.
-    *   `tasklist.md`: Detailed construction steps.
+1.  **Framework Choice**: **CustomTkinter** was chosen over Flet for better Windows-native performance and styling control.
+2.  **Architecture**:
+    *   **UI**: Modular views (Dashboard, Scanner, Settings) in `/ui`.
+    *   **Backend**: Threaded workers in `/backend` to prevent UI freezing.
+    *   **Duplicates**: Uses a **Standard Grouping** system (Content + Name + Folder) to ensure zero false positives, making it safe for educational content/courses.
+3.  **Core Optimization**:
+    *   Tiered Hashing (Size -> Quick Hash -> Full MD5).
+    *   Lazy-loading database results into Treeview.
 
-## Recent Changes
-- **Flet 0.80.2 Compatibility Fix**: Resolved a "blank screen" issue caused by breaking Flet API changes.
-    - Switched `ft.app()` to `ft.run()`.
-    - Replaced `page.views` routing with a direct `page.add()` layout for more reliable rendering.
-    - Renamed conflicting `self.page` properties in UI classes to `self._page`.
-    - Fixed `FilePicker` and `Alignment` API changes.
-- Finalized tech stack: **Flet + SQLite + Tiered Hashing**.
-- Updated `projectbrief.md` and `tasklist.md` to reflect the high-performance architecture.
+## Recent Changes (Refinement Phase)
+- **UI/UX Overhaul**: 
+    - Premium Dashboard with "Toxic Folders" analytics and hover-effective stat cards.
+    - Simplified Scanner View with modern CTkScrollbars and header-based sorting.
+    - Added "Slide-Up" entry animations (later simplified for performance).
+- **Duplicate Logic (Standard Edition)**:
+    - Optimized duplication finding to be **Course-Safe**. Files must match by Content + Name + Folder to be grouped.
+    - Removed confusing Mode Toggles; the system now handles hashing automatically.
+- **Workflow Tools**:
+    - Added **Cancel Scan** button to stop background threads safely.
+    - Added **Clear Metrics** button to reset the database and start fresh.
+    - Fixed horizontal scrollbar issues to handle extremely long file paths without clipping.
+- **Settings**: Persistent storage for "Skip Extensions" in SQLite.
 
 ## Next Steps
-- Finalize the layout styling to ensure the UI fills the screen correctly in the new Flet version.
-- Test the high-performance scanner worker with the updated UI signals.
-- Begin the packaging test for the standalone `.exe`.
+- **Build Pro**: Run PyInstaller to generate the standalone `.exe`.
+- **Validation**: Test the final executable on a clean Windows environment.
+- **Packaging**: Finalize Inno Setup installer.
