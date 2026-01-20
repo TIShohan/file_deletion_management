@@ -1,5 +1,10 @@
 # CleanSweep 🚀 (Pro File Deletion Management)
 
+# 📥 [Download CleanSweep for Windows (Portable .exe)](PASTE_YOUR_RELEASE_LINK_HERE)
+*No installation needed. Just download and run.*
+
+---
+
 CleanSweep is a high-performance, premium Windows utility designed to reclaim disk space by safely identifying large files and redundant duplicates with 100% precision.
 
 ![Version](https://img.shields.io/badge/version-1.0.4--Premium-blue)
